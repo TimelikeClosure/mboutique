@@ -10,6 +10,8 @@ body * {
 }
 .container {
     max-width: 1000px;
+    width: 100vw;
+    margin: 0 auto;
 }
 .page-header .page-main .page-footer {
     box-sizing: border-box;
@@ -18,4 +20,58 @@ body * {
 /*  Page Header section styling  */
 .page-header {
     height: 47.2vw;
+}
+.page-header-bar {
+    width: 100%;
+    max-height: 72px;
+    height: 7.2vw;
+    background-color: #fffabe;
+    position: relative;
+}
+.page-header-bar * {
+    display: inline-block;
+}
+.header-logo {
+    position: relative;
+    top: 50%;
+    left: 4.5%;
+    transform: translateY(-50%);
+    width: 15.6%;
+}
+.page-header-bar nav {
+    position: relative;
+    top: 50%;
+    left: 4.5%;
+    transform: translateY(-50%);
+}
+.page-header-bar nav ul {
+    padding-left: 6.5vw;
+}
+.page-header-bar nav li {
+    font-size: 1.6vw;
+    max-font-size: 16px;
+    color: #515151;
+    text-transform: uppercase;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+.header-logo img {
+    max-width: 156px;
+}
+.jumbotron {
+    width: 100%;
+}
+.jumbotron img {
+    max-width: 100%;
+}
+
+/*  Media queries for screen width > 1000px  */
+@media all and (min-width: 1000px) {
+
+    .page-header-bar nav ul {
+        padding-left: 65px;
+    }
+    .page-header-bar nav li {
+        font-size: 16px;
+    }
 }
