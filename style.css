@@ -1,1 +1,16 @@
 /* Add your CSS here */
+body {
+    margin: 0;
+    font-size: 0;
+}
+body * {
+    font-size: initial;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    max-width: 1000px;
+}
+.page-header .page-main .page-footer {
+    box-sizing: border-box;
+    width: 100%;
+}
