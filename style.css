@@ -1,0 +1,245 @@
+/* Add your CSS here */
+/*  Base body layout styling  */
+body {
+    margin: 0;
+    font-size: 0;
+}
+body * {
+    font-size: initial;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    max-width: 1000px;
+    width: 100vw;
+    margin: 0 auto;
+}
+#page-header #page-main #page-footer {
+    box-sizing: border-box;
+    width: 100%;
+}
+/*  Page Header section styling  */
+.page-header {
+    height: 47.2vw;
+}
+.page-header-bar {
+    width: 100%;
+    max-height: 72px;
+    height: 7.2vw;
+    background-color: #fffabe;
+    position: relative;
+}
+.page-header-bar * {
+    display: inline-block;
+}
+.header-logo {
+    position: relative;
+    top: 50%;
+    left: 4.5%;
+    transform: translateY(-50%);
+    width: 15.6%;
+}
+.page-header-bar nav {
+    position: relative;
+    top: 50%;
+    left: 4.5%;
+    transform: translateY(-50%);
+}
+.page-header-bar nav ul {
+    padding-left: 6.5vw;
+}
+.page-header-bar nav li {
+    font-size: 1.6vw;
+    max-font-size: 16px;
+    color: #515151;
+    text-transform: uppercase;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+.header-logo img {
+    max-width: 156px;
+}
+.jumbotron {
+    width: 100%;
+}
+.jumbotron img {
+    max-width: 100%;
+}
+
+/*  Page Main section styling  */
+.two-col-container {
+    display: flex;
+    justify-content: center;
+}
+.two-col {
+    box-sizing: border-box;
+    height: 100%;
+}
+.article-aside {
+    width: 25vw;
+    max-width: 250px;
+}
+.article-aside img {
+    margin: 11.5vw 3.15vw;
+    max-width: 18.7vw;
+}
+article {
+    color: #6a6969;
+    width: 75%;
+    padding: 4%;
+}
+article h1 {
+    font-size: 2vw;
+    margin: 1.5vw 0;
+}
+article p {
+    font-size: 1.4vw;
+    text-align: justify;
+}
+.schedule {
+    width: 100%;
+    color: #6a6969;
+    padding: 0.7375vw;
+    margin-bottom: 5vw;
+}
+.schedule>div {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0.7375vw;
+    background-color: #fffabe;
+    height: 14vw;
+    max-height: 140px;
+    width: 12.6vw;
+    max-width: 126px;
+}
+.schedule div div {
+    position: relative;
+    box-sizing: border-box;
+    padding: 0.4vw;
+}
+.schedule-day {
+    height: 3.7vw;
+    max-height: 37px;
+}
+.schedule-day * {
+    font-size: 1.4vw;
+    margin: 0;
+}
+.schedule-time {
+    height: 3.7vw;
+    max-height: 37px;
+}
+.schedule-time * {
+    font-size: 1.2vw;
+    margin: 0;
+}
+.schedule-flavor {
+    height: 3.3vw;
+    max-height: 33px;
+}
+.schedule-flavor * {
+    font-size: 1.2vw;
+    margin: 0;
+}
+.schedule-flavor img {
+    position: absolute;
+    right: 0.4vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.coconut {
+    color: white;
+    background-color: #824603;
+}
+.vanilla {
+    color: white;
+    background-color: #df5277;
+}
+.lemon {
+    color: white;
+    background-color: #a2304e;
+}
+.almond {
+    color: white;
+    background-color: #c39005;
+}
+
+/*  Page Footer styling  */
+#page-footer {
+    height: 8vw;
+    max-height: 80px;
+    background-color: #df5277;
+}
+#page-footer * {
+    color: white;
+    font-size: 1.2vw;
+}
+.contact {
+    position: relative;
+    width: 100%;
+    top: 10%;
+}
+.contact div {
+    display: inline-block;
+    width: 15%;
+    margin: 0 9%;
+    text-indent: 1.7vw;
+}
+.contact-mail {
+    background-image: url("assets/images/mail.png");
+    background-repeat: no-repeat;
+}
+.contact-phone {
+    background-image: url("assets/images/phone.png");
+    background-repeat: no-repeat;
+}
+.copyright {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+}
+/*  Media queries for screen width > 1000px  */
+@media all and (min-width: 1000px) {
+
+    .page-header-bar nav ul {
+        padding-left: 65px;
+    }
+    .page-header-bar nav li {
+        font-size: 16px;
+    }
+    .article-aside img {
+        margin: 115px 31.5px;
+        max-width: 187px;
+    }
+    article h1 {
+        font-size: 20px;
+    }
+    article p {
+        font-size: 14px;
+    }
+    .schedule {
+        padding: 7.375px;
+        margin-bottom: 50px;
+    }
+    .schedule>div {
+        margin: 7.375px;
+    }
+    .schedule div div {
+        padding: 4px;
+    }
+    .schedule-day * {
+        font-size: 14px;
+    }
+    .schedule-time * {
+        font-size: 12px;
+    }
+    .schedule-flavor * {
+        font-size: 12px;
+    }
+    .schedule-flavor img {
+        right: 4px;
+    }
+    #page-footer * {
+        font-size: 12px;
+    }
+}

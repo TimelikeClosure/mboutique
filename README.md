@@ -3,6 +3,7 @@
 ## Assignment 2
 We will be building out the Our Macarons page of the MBoutique website
 
+
 ## Code Setup Details
 
 #####1. Open PHPStorm
@@ -42,6 +43,7 @@ We will be building out the Our Macarons page of the MBoutique website
 ### Feature Set 1 - Our Macarons Page
 > - Create the HTML and CSS necessary to reproduce the MBoutique Our Macarons page
 	- Use the our_macarons.html file for your HTML
+
 	- Use the style.css file for your CSS
 > - Don't forget to link your CSS to your HTML 
 	- ex: `<link rel="stylesheet" type="text/css" src="style.css">`
@@ -56,6 +58,7 @@ We will be building out the Our Macarons page of the MBoutique website
 > <img src="https://github.com/Learning-Fuze/mboutique/blob/master/assets/mboutique_preview/_preview_explained/our-macarons_exp.png?raw=true" alt="MBoutique Our Macarons Page Design Doc">
 
 #### Suggestions
+
 
 > - Break the page down into sections and build one section at a time. For example:
 	- Header section
@@ -150,6 +153,7 @@ name]</b> already pre populated in the Title field
 ##### 5. Collaborate on feedback
 
 > Within the Github.com UI another developer or in this case an instructor will review the Pull Request you made - <b>Is your feature working</b>. Collaboration happens through github UI & the notifications are sent through email when comments are added to pull requests
+
 
 > - Students should make modifications to there code based on the instructors feedback
 > - Instructors will be giving an initial assessment based on the pull request. <b>Any additional collaboration after the instructor has been feedback will be on a requested basis only.</b>
