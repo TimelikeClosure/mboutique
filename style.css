@@ -167,11 +167,22 @@ article p {
 #page-footer {
     height: 8vw;
     max-height: 80px;
-    color: white;
     background-color: #df5277;
+}
+#page-footer * {
+    color: white;
+    font-size: 1.2vw;
+}
+.contact {
+    position: relative;
+    width: 100%;
+    top: 10%;
 }
 .contact div {
     display: inline-block;
+    width: 15%;
+    margin: 0 9%;
+    text-indent: 1.7vw;
 }
 .contact-mail {
     background-image: url("assets/images/mail.png");
@@ -180,6 +191,12 @@ article p {
 .contact-phone {
     background-image: url("assets/images/phone.png");
     background-repeat: no-repeat;
+}
+.copyright {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
 }
 /*  Media queries for screen width > 1000px  */
 @media all and (min-width: 1000px) {
@@ -221,5 +238,8 @@ article p {
     }
     .schedule-flavor img {
         right: 4px;
+    }
+    #page-footer * {
+        font-size: 12px;
     }
 }
