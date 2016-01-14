@@ -65,6 +65,9 @@ body * {
     max-width: 100%;
 }
 
+/*  Page Main section styling  */
+
+
 /*  Media queries for screen width > 1000px  */
 @media all and (min-width: 1000px) {
 
