@@ -99,6 +99,7 @@ article p {
     width: 100%;
     color: #6a6969;
     padding: 0.7375vw;
+    margin-bottom: 5vw;
 }
 .schedule>div {
     box-sizing: border-box;
@@ -164,7 +165,21 @@ article p {
 
 /*  Page Footer styling  */
 #page-footer {
+    height: 8vw;
+    max-height: 80px;
+    color: white;
     background-color: #df5277;
+}
+.contact div {
+    display: inline-block;
+}
+.contact-mail {
+    background-image: url("assets/images/mail.png");
+    background-repeat: no-repeat;
+}
+.contact-phone {
+    background-image: url("assets/images/phone.png");
+    background-repeat: no-repeat;
 }
 /*  Media queries for screen width > 1000px  */
 @media all and (min-width: 1000px) {
@@ -187,6 +202,7 @@ article p {
     }
     .schedule {
         padding: 7.375px;
+        margin-bottom: 50px;
     }
     .schedule>div {
         margin: 7.375px;
