@@ -13,7 +13,7 @@ body * {
     width: 100vw;
     margin: 0 auto;
 }
-.page-header .page-main .page-footer {
+#page-header #page-main #page-footer {
     box-sizing: border-box;
     width: 100%;
 }
@@ -95,7 +95,77 @@ article p {
     font-size: 1.4vw;
     text-align: justify;
 }
+.schedule {
+    width: 100%;
+    color: #6a6969;
+    padding: 0.7375vw;
+}
+.schedule>div {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0.7375vw;
+    background-color: #fffabe;
+    height: 14vw;
+    max-height: 140px;
+    width: 12.6vw;
+    max-width: 126px;
+}
+.schedule div div {
+    position: relative;
+    box-sizing: border-box;
+    padding: 0.4vw;
+}
+.schedule-day {
+    height: 3.7vw;
+    max-height: 37px;
+}
+.schedule-day * {
+    font-size: 1.4vw;
+    margin: 0;
+}
+.schedule-time {
+    height: 3.7vw;
+    max-height: 37px;
+}
+.schedule-time * {
+    font-size: 1.2vw;
+    margin: 0;
+}
+.schedule-flavor {
+    height: 3.3vw;
+    max-height: 33px;
+}
+.schedule-flavor * {
+    font-size: 1.2vw;
+    margin: 0;
+}
+.schedule-flavor img {
+    position: absolute;
+    right: 0.4vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.coconut {
+    color: white;
+    background-color: #824603;
+}
+.vanilla {
+    color: white;
+    background-color: #df5277;
+}
+.lemon {
+    color: white;
+    background-color: #a2304e;
+}
+.almond {
+    color: white;
+    background-color: #c39005;
+}
 
+/*  Page Footer styling  */
+#page-footer {
+    background-color: #df5277;
+}
 /*  Media queries for screen width > 1000px  */
 @media all and (min-width: 1000px) {
 
@@ -114,5 +184,26 @@ article p {
     }
     article p {
         font-size: 14px;
+    }
+    .schedule {
+        padding: 7.375px;
+    }
+    .schedule>div {
+        margin: 7.375px;
+    }
+    .schedule div div {
+        padding: 4px;
+    }
+    .schedule-day * {
+        font-size: 14px;
+    }
+    .schedule-time * {
+        font-size: 12px;
+    }
+    .schedule-flavor * {
+        font-size: 12px;
+    }
+    .schedule-flavor img {
+        right: 4px;
     }
 }
