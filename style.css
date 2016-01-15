@@ -73,6 +73,9 @@ body * {
 }
 
 /*  Page Main section styling  */
+main * {
+    color: #6a6969;
+}
 .two-col-container {
     display: flex;
     justify-content: center;
@@ -90,7 +93,6 @@ body * {
     max-width: 18.7vw;
 }
 article {
-    color: #6a6969;
     width: 75%;
     padding: 4%;
 }
@@ -104,7 +106,6 @@ article p {
 }
 .schedule {
     width: 100%;
-    color: #6a6969;
     padding: 0.7375vw;
     margin-bottom: 5vw;
 }
@@ -154,20 +155,19 @@ article p {
     transform: translateY(-50%);
 }
 .coconut {
-    color: white;
     background-color: #824603;
 }
 .vanilla {
-    color: white;
     background-color: #df5277;
 }
 .lemon {
-    color: white;
     background-color: #a2304e;
 }
 .almond {
-    color: white;
     background-color: #c39005;
+}
+.coconut *,.vanilla *,.lemon *,.almond * {
+    color: white;
 }
 
 /*  Page Footer styling  */
