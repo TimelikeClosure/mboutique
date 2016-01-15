@@ -104,10 +104,17 @@ main * {
 }
 article h1 {
     font-size: 2vw;
+    font-weight: normal;
 }
 article p,article li {
     font-size: 1.4vw;
     text-align: justify;
+}
+article p {
+    line-height: 150%;
+}
+article li {
+    line-height: 120%;
 }
 .schedule {
     width: 100%;
@@ -185,7 +192,7 @@ article p,article li {
 .one-col {
     box-sizing: border-box;
     width: 100%;
-    padding: 5% 5%;
+    padding: 5vw 5vw 7vw 5vw;
 }
 .one-col h1 {
     margin: 2vw 0;
@@ -269,6 +276,9 @@ article p,article li {
     }
     .schedule-flavor img {
         right: 4px;
+    }
+    .one-col {
+        padding: 50px 50px 70px 50px;
     }
     #page-footer * {
         font-size: 12px;
