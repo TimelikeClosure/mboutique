@@ -83,6 +83,21 @@ article p,article li {
 article p {line-height: 150%;}
 article li {line-height: 120%;}
 
+/*  Background image styling  */
+.bkgrd-image {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    width: 100vw;
+    max-width: 1000px;
+}
+.bkgrd-our-macarons {
+    background-image: url("assets/images/our-macarons-background.png");
+}
+.bkgrd-gifts-parties {
+    background-image: url("assets/images/gifts-parties-background.png");
+}
+
 /*  Column layouts styling  */
 .two-col-container {
     display: flex;
@@ -170,14 +185,6 @@ article li {line-height: 120%;}
 .almond {background-color: #c39005;}
 .coconut *,.vanilla *,.lemon *,.almond * {color: white;}
 
-.bkgrd-our-macarons {
-    background-image: url("assets/images/our-macarons-background.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% auto;
-    width: 100vw;
-    max-width: 1000px;
-}
 
 /*  Page Footer styling  */
 #page-footer {
