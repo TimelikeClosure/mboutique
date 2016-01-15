@@ -76,14 +76,41 @@ article h1 {
     font-size: 2vw;
     font-weight: normal;
 }
-article p,article li {
+article p,article li,article a {
     font-size: 1.4vw;
     text-align: justify;
 }
 article p {line-height: 150%;}
 article li {line-height: 120%;}
+article a {
+    line-height: 150%;
+    text-decoration: none;
+    color: #df5277;
+}
+
+/*  Background image styling  */
+.bkgrd-image {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    width: 100vw;
+    max-width: 1000px;
+}
+.bkgrd-our-macarons {
+    background-image: url("assets/images/our-macarons-background.png");
+}
+.bkgrd-gifts-parties {
+    background-image: url("assets/images/gifts-parties-background.png");
+}
 
 /*  Column layouts styling  */
+.one-col {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5vw 5vw 7vw 5vw;
+}
+.one-col h1 {margin: 2vw 0;}
+.one-col ul {margin-bottom: 50px;}
 .two-col-container {
     display: flex;
     justify-content: center;
@@ -100,18 +127,15 @@ article li {line-height: 120%;}
     margin: 11.5vw 3.15vw;
     max-width: 18.7vw;
 }
+.col-left-51 {
+    width: 51vw;
+    max-width: 510px;
+}
 .col-right-75 {
     width: 75%;
     padding: 4%;
+    margin: 1.5vw 0;
 }
-.col-right-75 {margin: 1.5vw 0;}
-.one-col {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 5vw 5vw 7vw 5vw;
-}
-.one-col h1 {margin: 2vw 0;}
-.one-col ul {margin-bottom: 50px;}
 
 /*  Schedule styling  */
 .schedule {
@@ -170,14 +194,6 @@ article li {line-height: 120%;}
 .almond {background-color: #c39005;}
 .coconut *,.vanilla *,.lemon *,.almond * {color: white;}
 
-.bkgrd-our-macarons {
-    background-image: url("assets/images/our-macarons-background.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% auto;
-    width: 100vw;
-    max-width: 1000px;
-}
 
 /*  Page Footer styling  */
 #page-footer {
@@ -236,7 +252,7 @@ article li {line-height: 120%;}
 
     /*  Page main styling  */
     article h1 {font-size: 20px;}
-    article p,article li {font-size: 14px;}
+    article p,article li,article a {font-size: 14px;}
 
     /*  Column layouts styling  */
     .col-left-25 img {
