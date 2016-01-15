@@ -169,6 +169,15 @@ article p {
 .coconut *,.vanilla *,.lemon *,.almond * {
     color: white;
 }
+.bkgrd-our-macarons {
+    background-image: url("assets/images/our-macarons-background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    height: 60vw;
+    width: 100vw;
+    max-width: 1000px;
+}
 
 /*  Page Footer styling  */
 #page-footer {
