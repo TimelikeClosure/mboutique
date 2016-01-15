@@ -73,6 +73,9 @@ body * {
 }
 
 /*  Page Main section styling  */
+main {
+    width: 100%;
+}
 main * {
     color: #6a6969;
 }
@@ -84,23 +87,25 @@ main * {
     box-sizing: border-box;
     height: 100%;
 }
-.article-aside {
+.col-left-25 {
     width: 25vw;
     max-width: 250px;
 }
-.article-aside img {
+.col-left-25 img {
     margin: 11.5vw 3.15vw;
     max-width: 18.7vw;
 }
-article {
+.col-right-75 {
     width: 75%;
     padding: 4%;
 }
-article h1 {
-    font-size: 2vw;
+.col-right-75 {
     margin: 1.5vw 0;
 }
-article p {
+article h1 {
+    font-size: 2vw;
+}
+article p,article li {
     font-size: 1.4vw;
     text-align: justify;
 }
@@ -174,9 +179,19 @@ article p {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% auto;
-    height: 60vw;
     width: 100vw;
     max-width: 1000px;
+}
+.one-col {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5% 5%;
+}
+.one-col h1 {
+    margin: 2vw 0;
+}
+.one-col ul {
+    margin-bottom: 50px;
 }
 
 /*  Page Footer styling  */
@@ -223,14 +238,14 @@ article p {
     .page-header-bar nav li {
         font-size: 16px;
     }
-    .article-aside img {
+    .col-left-25 img {
         margin: 115px 31.5px;
         max-width: 187px;
     }
     article h1 {
         font-size: 20px;
     }
-    article p {
+    article p,article li {
         font-size: 14px;
     }
     .schedule {
