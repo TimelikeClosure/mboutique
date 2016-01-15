@@ -76,12 +76,17 @@ article h1 {
     font-size: 2vw;
     font-weight: normal;
 }
-article p,article li {
+article p,article li,article a {
     font-size: 1.4vw;
     text-align: justify;
 }
 article p {line-height: 150%;}
 article li {line-height: 120%;}
+article a {
+    line-height: 150%;
+    text-decoration: none;
+    color: #df5277;
+}
 
 /*  Background image styling  */
 .bkgrd-image {
@@ -243,7 +248,7 @@ article li {line-height: 120%;}
 
     /*  Page main styling  */
     article h1 {font-size: 20px;}
-    article p,article li {font-size: 14px;}
+    article p,article li,article a {font-size: 14px;}
 
     /*  Column layouts styling  */
     .col-left-25 img {
