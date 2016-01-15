@@ -55,6 +55,13 @@ body * {
     margin-left: 1.5vw;
     margin-right: 1.5vw;
 }
+.page-header-bar nav a {
+    text-decoration: none;
+    color: inherit;
+}
+.page-header-bar nav a:hover {
+    color: #d42551;
+}
 .header-logo img {
     max-width: 156px;
 }
