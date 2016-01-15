@@ -1,0 +1,265 @@
+/* Add your CSS here */
+/*  Base body layout styling  */
+body {
+    margin: 0;
+    font-size: 0;
+}
+body * {
+    font-size: initial;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    max-width: 1000px;
+    width: 100vw;
+    margin: 0 auto;
+}
+#page-header #page-main #page-footer {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/*  Page header styling  */
+#page-header {
+    height: 47.2vw;
+    max-height: 472px;
+}
+.page-header-bar {
+    width: 100%;
+    max-height: 72px;
+    height: 7.2vw;
+    background-color: #fffabe;
+    position: relative;
+}
+.page-header-bar * {display: inline-block;}
+.header-logo {
+    position: relative;
+    top: 50%;
+    left: 4.5%;
+    transform: translateY(-50%);
+    width: 15.6vw;
+    max-width: 156px;
+}
+.header-logo img {
+    width: 100%;
+}
+.page-header-bar nav {
+    position: relative;
+    top: 50%;
+    left: 4.5%;
+    transform: translateY(-50%);
+}
+.page-header-bar nav ul {padding-left: 6.5vw;}
+.page-header-bar nav li {
+    font-size: 1.6vw;
+    color: #515151;
+    text-transform: uppercase;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+.page-header-bar nav a {
+    text-decoration: none;
+    color: inherit;
+}
+.page-header-bar nav a:hover {color: #d42551;}
+.header-logo img {max-width: 156px;}
+.jumbotron {width: 100%;}
+.jumbotron img {max-width: 100%;}
+
+/*  Page main styling  */
+main {
+    width: 100%;
+}
+main * {
+    color: #6a6969;
+}
+article h1 {
+    font-size: 2vw;
+    font-weight: normal;
+}
+article p,article li {
+    font-size: 1.4vw;
+    text-align: justify;
+}
+article p {line-height: 150%;}
+article li {line-height: 120%;}
+
+/*  Column layouts styling  */
+.two-col-container {
+    display: flex;
+    justify-content: center;
+}
+.two-col {
+    box-sizing: border-box;
+    height: 100%;
+}
+.col-left-25 {
+    width: 25vw;
+    max-width: 250px;
+}
+.col-left-25 img {
+    margin: 11.5vw 3.15vw;
+    max-width: 18.7vw;
+}
+.col-right-75 {
+    width: 75%;
+    padding: 4%;
+}
+.col-right-75 {margin: 1.5vw 0;}
+.one-col {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5vw 5vw 7vw 5vw;
+}
+.one-col h1 {margin: 2vw 0;}
+.one-col ul {margin-bottom: 50px;}
+
+/*  Schedule styling  */
+.schedule {
+    width: 100%;
+    padding: 0.7375vw;
+    margin-bottom: 5vw;
+}
+.schedule>div {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0.7375vw;
+    background-color: #fffabe;
+    height: 14vw;
+    max-height: 140px;
+    width: 12.6vw;
+    max-width: 126px;
+}
+.schedule div div {
+    position: relative;
+    box-sizing: border-box;
+    padding: 0.4vw;
+}
+.schedule-day {
+    height: 3.7vw;
+    max-height: 37px;
+}
+.schedule-day * {
+    font-size: 1.4vw;
+    margin: 0;
+}
+.schedule-time {
+    height: 3.7vw;
+    max-height: 37px;
+}
+.schedule-time * {
+    font-size: 1.2vw;
+    margin: 0;
+}
+.schedule-flavor {
+    height: 3.3vw;
+    max-height: 33px;
+}
+.schedule-flavor * {
+    font-size: 1.2vw;
+    margin: 0;
+}
+.schedule-flavor img {
+    position: absolute;
+    right: 0.4vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.coconut {background-color: #824603;}
+.vanilla {background-color: #df5277;}
+.lemon {background-color: #a2304e;}
+.almond {background-color: #c39005;}
+.coconut *,.vanilla *,.lemon *,.almond * {color: white;}
+
+.bkgrd-our-macarons {
+    background-image: url("assets/images/our-macarons-background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    width: 100vw;
+    max-width: 1000px;
+}
+
+/*  Page Footer styling  */
+#page-footer {
+    height: 8vw;
+    max-height: 80px;
+    background-color: #df5277;
+}
+#page-footer * {
+    color: white;
+    font-size: 1.2vw;
+}
+.contact {
+    position: relative;
+    width: 100%;
+    top: 15%;
+    left: 5%;
+}
+.contact div {
+    display: inline-block;
+    width: 15%;
+    margin: 0 8%;
+    text-indent: 1.7vw;
+}
+.contact-mail {
+    background-image: url("assets/images/mail.png");
+    background-repeat: no-repeat;
+}
+.contact-phone {
+    background-image: url("assets/images/phone.png");
+    background-repeat: no-repeat;
+}
+.contact-social-media {
+    position: relative;
+    left: -4vw;
+}
+.contact-facebook {
+    position: relative;
+    left: 2vw;
+}
+.contact-twitter {
+    position: relative;
+    left: 4vw;
+}
+.copyright {
+    position: relative;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+}
+
+/*  Media queries for screen width > 1000px  */
+@media all and (min-width: 1000px) {
+    /*  Page header styling  */
+    .page-header-bar nav ul {padding-left: 65px;}
+    .page-header-bar nav li {font-size: 16px;}
+
+    /*  Page main styling  */
+    article h1 {font-size: 20px;}
+    article p,article li {font-size: 14px;}
+
+    /*  Column layouts styling  */
+    .col-left-25 img {
+        margin: 115px 31.5px;
+        max-width: 187px;
+    }
+    .one-col {padding: 50px 50px 70px 50px;}
+
+    /*  Schedule styling  */
+    .schedule {
+        padding: 7.375px;
+        margin-bottom: 50px;
+    }
+    .schedule>div {margin: 7.375px;}
+    .schedule div div {padding: 4px;}
+    .schedule-day * {font-size: 14px;}
+    .schedule-time * {font-size: 12px;}
+    .schedule-flavor * {font-size: 12px;}
+    .schedule-flavor img {right: 4px;}
+
+    /*  Page footer styling  */
+    #page-footer * {font-size: 12px;}
+    .contact-social-media {left: -40px;}
+    .contact-facebook {left: 20px;}
+    .contact-twitter {left: 40px;}
+}
