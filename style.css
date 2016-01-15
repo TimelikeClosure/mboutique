@@ -104,6 +104,13 @@ article a {
 }
 
 /*  Column layouts styling  */
+.one-col {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5vw 5vw 7vw 5vw;
+}
+.one-col h1 {margin: 2vw 0;}
+.one-col ul {margin-bottom: 50px;}
 .two-col-container {
     display: flex;
     justify-content: center;
@@ -120,18 +127,15 @@ article a {
     margin: 11.5vw 3.15vw;
     max-width: 18.7vw;
 }
+.col-left-51 {
+    width: 51vw;
+    max-width: 510px;
+}
 .col-right-75 {
     width: 75%;
     padding: 4%;
+    margin: 1.5vw 0;
 }
-.col-right-75 {margin: 1.5vw 0;}
-.one-col {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 5vw 5vw 7vw 5vw;
-}
-.one-col h1 {margin: 2vw 0;}
-.one-col ul {margin-bottom: 50px;}
 
 /*  Schedule styling  */
 .schedule {
