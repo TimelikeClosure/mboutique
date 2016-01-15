@@ -17,10 +17,9 @@ body * {
     box-sizing: border-box;
     width: 100%;
 }
-/*  Page Header section styling  */
-.page-header {
-    height: 47.2vw;
-}
+
+/*  Page header styling  */
+.page-header {height: 47.2vw;}
 .page-header-bar {
     width: 100%;
     max-height: 72px;
@@ -28,9 +27,7 @@ body * {
     background-color: #fffabe;
     position: relative;
 }
-.page-header-bar * {
-    display: inline-block;
-}
+.page-header-bar * {display: inline-block;}
 .header-logo {
     position: relative;
     top: 50%;
@@ -44,9 +41,7 @@ body * {
     left: 4.5%;
     transform: translateY(-50%);
 }
-.page-header-bar nav ul {
-    padding-left: 6.5vw;
-}
+.page-header-bar nav ul {padding-left: 6.5vw;}
 .page-header-bar nav li {
     font-size: 1.6vw;
     max-font-size: 16px;
@@ -59,26 +54,30 @@ body * {
     text-decoration: none;
     color: inherit;
 }
-.page-header-bar nav a:hover {
-    color: #d42551;
-}
-.header-logo img {
-    max-width: 156px;
-}
-.jumbotron {
-    width: 100%;
-}
-.jumbotron img {
-    max-width: 100%;
-}
+.page-header-bar nav a:hover {color: #d42551;}
+.header-logo img {max-width: 156px;}
+.jumbotron {width: 100%;}
+.jumbotron img {max-width: 100%;}
 
-/*  Page Main section styling  */
+/*  Page main styling  */
 main {
     width: 100%;
 }
 main * {
     color: #6a6969;
 }
+article h1 {
+    font-size: 2vw;
+    font-weight: normal;
+}
+article p,article li {
+    font-size: 1.4vw;
+    text-align: justify;
+}
+article p {line-height: 150%;}
+article li {line-height: 120%;}
+
+/*  Column layouts styling  */
 .two-col-container {
     display: flex;
     justify-content: center;
@@ -99,23 +98,16 @@ main * {
     width: 75%;
     padding: 4%;
 }
-.col-right-75 {
-    margin: 1.5vw 0;
+.col-right-75 {margin: 1.5vw 0;}
+.one-col {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5vw 5vw 7vw 5vw;
 }
-article h1 {
-    font-size: 2vw;
-    font-weight: normal;
-}
-article p,article li {
-    font-size: 1.4vw;
-    text-align: justify;
-}
-article p {
-    line-height: 150%;
-}
-article li {
-    line-height: 120%;
-}
+.one-col h1 {margin: 2vw 0;}
+.one-col ul {margin-bottom: 50px;}
+
+/*  Schedule styling  */
 .schedule {
     width: 100%;
     padding: 0.7375vw;
@@ -166,21 +158,12 @@ article li {
     top: 50%;
     transform: translateY(-50%);
 }
-.coconut {
-    background-color: #824603;
-}
-.vanilla {
-    background-color: #df5277;
-}
-.lemon {
-    background-color: #a2304e;
-}
-.almond {
-    background-color: #c39005;
-}
-.coconut *,.vanilla *,.lemon *,.almond * {
-    color: white;
-}
+.coconut {background-color: #824603;}
+.vanilla {background-color: #df5277;}
+.lemon {background-color: #a2304e;}
+.almond {background-color: #c39005;}
+.coconut *,.vanilla *,.lemon *,.almond * {color: white;}
+
 .bkgrd-our-macarons {
     background-image: url("assets/images/our-macarons-background.png");
     background-repeat: no-repeat;
@@ -188,17 +171,6 @@ article li {
     background-size: 100% auto;
     width: 100vw;
     max-width: 1000px;
-}
-.one-col {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 5vw 5vw 7vw 5vw;
-}
-.one-col h1 {
-    margin: 2vw 0;
-}
-.one-col ul {
-    margin-bottom: 50px;
 }
 
 /*  Page Footer styling  */
@@ -249,60 +221,39 @@ article li {
     width: 100%;
     text-align: center;
 }
+
 /*  Media queries for screen width > 1000px  */
 @media all and (min-width: 1000px) {
+    /*  Page header styling  */
+    .page-header-bar nav ul {padding-left: 65px;}
+    .page-header-bar nav li {font-size: 16px;}
 
-    .page-header-bar nav ul {
-        padding-left: 65px;
-    }
-    .page-header-bar nav li {
-        font-size: 16px;
-    }
+    /*  Page main styling  */
+    article h1 {font-size: 20px;}
+    article p,article li {font-size: 14px;}
+
+    /*  Column layouts styling  */
     .col-left-25 img {
         margin: 115px 31.5px;
         max-width: 187px;
     }
-    article h1 {
-        font-size: 20px;
-    }
-    article p,article li {
-        font-size: 14px;
-    }
+    .one-col {padding: 50px 50px 70px 50px;}
+
+    /*  Schedule styling  */
     .schedule {
         padding: 7.375px;
         margin-bottom: 50px;
     }
-    .schedule>div {
-        margin: 7.375px;
-    }
-    .schedule div div {
-        padding: 4px;
-    }
-    .schedule-day * {
-        font-size: 14px;
-    }
-    .schedule-time * {
-        font-size: 12px;
-    }
-    .schedule-flavor * {
-        font-size: 12px;
-    }
-    .schedule-flavor img {
-        right: 4px;
-    }
-    .one-col {
-        padding: 50px 50px 70px 50px;
-    }
-    #page-footer * {
-        font-size: 12px;
-    }
-    .contact-social-media {
-        left: -40px;
-    }
-    .contact-facebook {
-        left: 20px;
-    }
-    .contact-twitter {
-        left: 40px;
-    }
+    .schedule>div {margin: 7.375px;}
+    .schedule div div {padding: 4px;}
+    .schedule-day * {font-size: 14px;}
+    .schedule-time * {font-size: 12px;}
+    .schedule-flavor * {font-size: 12px;}
+    .schedule-flavor img {right: 4px;}
+
+    /*  Page footer styling  */
+    #page-footer * {font-size: 12px;}
+    .contact-social-media {left: -40px;}
+    .contact-facebook {left: 20px;}
+    .contact-twitter {left: 40px;}
 }
