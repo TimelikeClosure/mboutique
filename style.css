@@ -214,12 +214,13 @@ article li {
 .contact {
     position: relative;
     width: 100%;
-    top: 10%;
+    top: 15%;
+    left: 5%;
 }
 .contact div {
     display: inline-block;
     width: 15%;
-    margin: 0 9%;
+    margin: 0 8%;
     text-indent: 1.7vw;
 }
 .contact-mail {
@@ -230,9 +231,21 @@ article li {
     background-image: url("assets/images/phone.png");
     background-repeat: no-repeat;
 }
+.contact-social-media {
+    position: relative;
+    left: -4vw;
+}
+.contact-facebook {
+    position: relative;
+    left: 2vw;
+}
+.contact-twitter {
+    position: relative;
+    left: 4vw;
+}
 .copyright {
     position: relative;
-    top: 25%;
+    top: 35%;
     width: 100%;
     text-align: center;
 }
@@ -282,5 +295,14 @@ article li {
     }
     #page-footer * {
         font-size: 12px;
+    }
+    .contact-social-media {
+        left: -40px;
+    }
+    .contact-facebook {
+        left: 20px;
+    }
+    .contact-twitter {
+        left: 40px;
     }
 }
