@@ -188,7 +188,7 @@ branch/group <b>assignment_4</b>
 
 > ####Step 4.5 Add details into the pull request
 > 1. Give the pull request a title, by default its the name of the last commit (package) message that was saved
->   1. If you set the commit message above you should get get <b>mboutique Assignment_4 - [you name first & last 
+>   1. If you set the commit message above you should get get <b>mboutique Assignment_4 - [you name first & last
 name]</b> already pre populated in the Title field
 > 1. <b>Don't assign a user.</b> (An Instructor will select who this gets assigned too)
 >   1. Further into the cohort we will have students learn to review pull requests
