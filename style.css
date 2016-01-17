@@ -328,34 +328,23 @@ main input,main textarea,main button {
     .header-logo img {max-width: 156px;}
 
     /*  Page main styling  */
-    main {width: 100%;}
-    main * {color: #6a6969;}
     main *::-webkit-input-placeholder {color: #6a6969;}
     main *:-moz-placeholder {color: #6a6969;}
     main *::-moz-placeholder {color: #6a6969;}
     main *:-ms-input-placeholder {color: #6a6969;}
     main h1 {
         font-size: 2vw;
-        font-weight: normal;
         margin: 2vw 0;
     }
     main p,main li,main a,main input,main textarea,main button {
         font-size: 1.4vw;
         margin: 1.5vw 0;
-        text-align: justify;
     }
     main p {line-height: 150%;}
     main ul {margin-bottom: 50px;}
     main li {line-height: 120%;}
     main a {
         line-height: 150%;
-        text-decoration: none;
-        color: #df5277;
-    }
-    main input,main textarea,main button {
-        display: block;
-        border: none;
-        background-color: #f5f5f5;
     }
     hr {display: none;}
 
@@ -376,7 +365,6 @@ main input,main textarea,main button {
         padding: 5.5vw 1.5vw 2vw 1.5vw;
     }
     .flex-container>* {padding: 2vw 2.2vw;}
-    .flex-item-1,.flex-item-2,.flex-item-3 {flex-grow: 1;}
     .flex-item-1 {flex: 1;}
     .flex-item-2 {flex: 2;}
     .flex-item-3 {flex: 3;}
@@ -516,24 +504,15 @@ main input,main textarea,main button {
     #page-footer {
         height: 8vw;
         max-height: 80px;
-        background-color: #df5277;
     }
-    #page-footer * {
-        color: white;
-        font-size: 1.2vw;
-    }
-    .contact {
-        position: relative;
-        width: 100%;
-        justify-content: space-around;
-    }
+    #page-footer * {font-size: 1.2vw;}
+    .contact {justify-content: space-around;}
     .contact>div {
         flex-basis: 33%;
         margin: 1vw 0 0 0;
     }
     .contact-mail {text-indent: 2.7vw;}
     .contact-phone {text-indent: 2.7vw;}
-    .contact-social-media {left: -4vw;}
     .contact-facebook {
         top: 0;
         height: 1.6vw;
