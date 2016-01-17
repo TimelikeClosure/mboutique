@@ -238,7 +238,7 @@ main input,main textarea,main button {
 
 /*  Page Footer styling  */
 #page-footer {
-    height: 21vw;
+    height: 15vw;
     /*max-height: 80px;*/
     background-color: #df5277;
 }
@@ -249,7 +249,7 @@ main input,main textarea,main button {
 .contact {
     position: relative;
     width: 100%;
-    top: 15%;
+    /*top: 15%;*/
     /*left: 5%;*/
     display: flex;
     flex-direction: row;
@@ -260,7 +260,7 @@ main input,main textarea,main button {
 .contact>div {
     /*display: inline-block;*/
     flex-basis: 34%;
-    /*margin: 0 8%;*/
+    margin: 1vw 0 0 0;
     display: flex;
     justify-content: center;
 }
@@ -283,14 +283,18 @@ main input,main textarea,main button {
 .contact-facebook {
     position: relative;
     left: 2vw;
+    top: 0.5vw;
+    height: 3vw;
 }
 .contact-twitter {
     position: relative;
-    left: 4vw;
+    left: 5vw;
+    top: 0.5vw;
+    height: 3vw;
 }
 .copyright {
     position: relative;
-    top: 35%;
+    top: 2vw;
     width: 100%;
     text-align: center;
 }
@@ -543,7 +547,7 @@ main input,main textarea,main button {
     .contact {
         position: relative;
         width: 100%;
-        top: 15%;
+        /*top: 15%;*/
         /*left: 5%;*/
         justify-content: space-around;
     }
@@ -551,35 +555,39 @@ main input,main textarea,main button {
         /*display: inline-block;*/
         /*width: 15%;*/
         flex-basis: 33%;
-        /*margin: 0 8%;*/
+        margin: 1vw 0 0 0;
     }
     .contact-mail {
-        background-image: url("assets/images/mail.png");
-        background-repeat: no-repeat;
-        text-indent: 1.7vw;
+        /*background-image: url("assets/images/mail.png");
+        background-repeat: no-repeat;*/
+        text-indent: 2.7vw;
     }
     .contact-phone {
-        background-image: url("assets/images/phone.png");
-        background-repeat: no-repeat;
-        text-indent: 1.7vw;
+        /*background-image: url("assets/images/phone.png");
+        background-repeat: no-repeat;*/
+        text-indent: 2.7vw;
     }
     .contact-social-media {
-        position: relative;
+        /*position: relative;*/
         left: -4vw;
     }
     .contact-facebook {
-        position: relative;
-        left: 2vw;
+        /*position: relative;*/
+        /*left: 2vw;*/
+        top: 0;
+        height: 1.6vw;
     }
     .contact-twitter {
-        position: relative;
+       /* position: relative;*/
         left: 4vw;
+        top: 0;
+        height: 1.6vw;
     }
     .copyright {
-        position: relative;
-        top: 35%;
-        width: 100%;
-        text-align: center;
+        /*position: relative;*/
+        top: 1.5vw;
+        /*width: 100%;
+        text-align: center;*/
     }
 }
 /*  Media queries for screen width > 1000px  */
@@ -613,7 +621,17 @@ main input,main textarea,main button {
 
     /*  Page footer styling  */
     #page-footer * {font-size: 12px;}
+    .contact>div {margin-top: 10px;}
+    .contact-mail {text-indent: 27px;}
+    .contact-phone {text-indent: 27px;}
     .contact-social-media {left: -40px;}
-    .contact-facebook {left: 20px;}
-    .contact-twitter {left: 40px;}
+    .contact-facebook {
+        left: 20px;
+        height: 16px;
+    }
+    .contact-twitter {
+        left: 40px;
+        height: 16px;
+    }
+    .copyright {top: 15px;}
 }
