@@ -309,3 +309,16 @@ main input,main textarea,main button {
     .contact-facebook {left: 20px;}
     .contact-twitter {left: 40px;}
 }
+
+/*  Media queries for screen width <= 400px  */
+@media screen and (max-width: 400px) {
+    .two-col-container {
+        display: block;
+    }
+    .col-right-75 {
+        width: auto;
+    }
+    .hidden-mobile {
+        display: none;
+    }
+}
