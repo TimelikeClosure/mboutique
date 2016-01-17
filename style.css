@@ -161,6 +161,7 @@ main input,main textarea,main button {
     transform: translateX(-100%);
     width: 50%;
     text-align: center;
+    padding: 0;
 }
 
 
@@ -429,13 +430,15 @@ main input,main textarea,main button {
     main h1 {
         font-size: 2vw;
         font-weight: normal;
+        margin: 2vw 0;
     }
     main p,main li,main a,main input,main textarea,main button {
         font-size: 1.4vw;
-        margin: 0.5vw 0;
+        margin: 1.5vw 0;
         text-align: justify;
     }
     main p {line-height: 150%;}
+    main ul {margin-bottom: 50px;}
     main li {line-height: 120%;}
     main a {
         line-height: 150%;
@@ -448,17 +451,6 @@ main input,main textarea,main button {
         background-color: #f5f5f5;
     }
     hr {display: none;}
-
-    /*  Flexbox column layout styling  */
-    .flex-container {
-        flex-direction: row;
-    }
-    .flex-item-1 {flex: 1;}
-    .flex-item-2 {flex: 2;}
-    .flex-item-3 {flex: 3;}
-    .flex-mobile-hidden {
-        display: block;
-    }
 
     /*  Background image styling  */
     .bkgrd-image {
@@ -473,6 +465,42 @@ main input,main textarea,main button {
     }
     .bkgrd-gifts-parties {
         background-image: url("assets/images/gifts-parties-background.png");
+    }
+
+    /*  Flexbox column layout styling  */
+    .flex-container {
+        flex-direction: row;
+        padding: 5.5vw 1.5vw 2vw 1.5vw;
+    }
+    .flex-container>* {
+        padding: 2vw 2.2vw;
+    }
+    .flex-item-1,.flex-item-2,.flex-item-3 {flex-grow: 1;}
+    .flex-item-1 {flex: 1;}
+    .flex-item-2 {flex: 2;}
+    .flex-item-3 {flex: 3;}
+    .flex-mobile-hidden {
+        display: block;
+    }
+    .flex-container img {
+        width: 187px;
+        max-width: 18.7vw;
+    }
+    .flex-container input,.flex-container textarea,.flex-container button {
+        margin: 1.5vw 0;
+    }
+    .two-col input,.two-col textarea {
+        width: 100%;
+    }
+    .flex-container input,.flex-container button {
+        height: 3.5vw;
+        max-height: 35px;
+    }
+    .flex-container textarea {
+        /*display: block;
+        resize: none;*/
+        height: 7vw;
+        max-height: 70px;
     }
 
     /*  Column layouts styling  */
@@ -653,9 +681,24 @@ main input,main textarea,main button {
     .page-header-bar nav a {font-size: 16px;}
 
     /*  Page main styling  */
-    main h1 {font-size: 20px;}
-    main p,main li,main a,main input,main textarea,main button {font-size: 14px;}
-    main input,main textarea,main button {}
+    main h1 {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    main p,main li,main a,main input,main textarea,main button {font-size: 14px;
+        margin: 15px 0;}
+    main ul {margin-bottom: 50px;}
+
+    /*  Flexbox column layout styling  */
+    .flex-container {
+        padding: 55px 15px 20px 15px;
+    }
+    .flex-container>* {
+        padding: 20px 24px;
+    }
+    .flex-container input,.flex-container textarea,.flex-container button {
+        margin: 15px 0;
+    }
 
     /*  Column layouts styling  */
     .one-col {padding: 50px 50px 70px 50px;}
