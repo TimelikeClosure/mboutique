@@ -1,4 +1,3 @@
-/* Add your CSS here */
 /*  Base body layout styling  */
 body {
     margin: 0;
@@ -19,40 +18,19 @@ body * {
 }
 
 /*  Page header styling  */
-/*#page-header {
-    height: 47.2vw;
-    max-height: 472px;
-}*/
 .page-header-bar {
     display: flex;
     flex-direction: column;
-    /*flex-wrap: nowrap;
-    justify-content: space-between;*/
     align-items: center;
     width: 100%;
     background-color: #fffabe;
-    /*position: relative;*/
 }
-/*.page-header-bar * {display: inline-block;}*/
 .header-logo {
-    /*position: relative;
-    top: 50%;
-    left: 4.5%;
-    transform: translateY(-50%);*/
     width: 38.933vw;
-    /*max-width: 156px;*/
     flex-grow: 0;
     margin-top: 2.667vw;
 }
-.header-logo img {
-    width: 100%;
-}
-/*.page-header-bar nav {
-    position: relative;
-    top: 50%;
-    left: 4.5%;
-    transform: translateY(-50%);
-}*/
+.header-logo img {width: 100%;}
 .page-header-bar nav ul {
     list-style-type: none;
     padding: 0;
@@ -69,17 +47,13 @@ body * {
     color: #515151;
     text-transform: uppercase;
     text-decoration: none;
-    /*color: inherit;*/
 }
 .page-header-bar nav a:hover {color: #d42551;}
-/*.header-logo img {max-width: 156px;}*/
 .jumbotron {width: 100%;}
 .jumbotron img {max-width: 100%;}
 
 /*  Page main styling  */
-main {
-    width: 100%;
-}
+main {width: 100%;}
 main * {color: #6a6969;}
 main *::-webkit-input-placeholder {color: #6a6969;}
 main *:-moz-placeholder {color: #6a6969;}
@@ -116,12 +90,8 @@ main input,main textarea,main button {
     width: 100vw;
     max-width: 1000px;
 }
-.bkgrd-our-macarons {
-    background-image: url("assets/images/our-macarons-background.png");
-}
-.bkgrd-gifts-parties {
-    background-image: url("assets/images/gifts-parties-background.png");
-}
+.bkgrd-our-macarons {background-image: url("assets/images/our-macarons-background.png");}
+.bkgrd-gifts-parties {background-image: url("assets/images/gifts-parties-background.png");}
 
 /*  Flexbox column layout styling  */
 .flex-container {
@@ -133,24 +103,12 @@ main input,main textarea,main button {
     align-items: center;
     padding: 2vw 10vw;
 }
-.flex-container>* {
-    width: 100%;
-}
-.flex-item-baseline {
-    align-self: baseline;
-}
-.flex-mobile-hidden {
-    display: none;
-}
-.flex-container input,.flex-container textarea,.flex-container button {
-    margin: 3.8vw 0;
-}
-.flex-container form,.flex-container input,.flex-container textarea {
-    width: 100%;
-}
-.flex-container input,.flex-container button {
-    height: 8.75vw;
-}
+.flex-container>* {width: 100%;}
+.flex-item-baseline {align-self: baseline;}
+.flex-mobile-hidden {display: none;}
+.flex-container input,.flex-container textarea,.flex-container button {margin: 3.8vw 0;}
+.flex-container form,.flex-container input,.flex-container textarea {width: 100%;}
+.flex-container input,.flex-container button {height: 8.75vw;}
 .flex-container textarea {
     resize: none;
     height: 17.5vw;
@@ -166,6 +124,7 @@ main input,main textarea,main button {
 
 
 /*  Column layouts styling  */
+/*  This section to be depreciated in favor of Flexbox column layout styling once all pages have been moved over  */
 .one-col {
     box-sizing: border-box;
     width: 100%;
@@ -248,9 +207,7 @@ main input,main textarea,main button {
     height: 3.7vw;
     max-height: 37px;
 }
-.schedule-day * {
-    margin: 0;
-}
+.schedule-day * {margin: 0;}
 .schedule-time {
     height: 3.7vw;
     max-height: 37px;
@@ -283,7 +240,6 @@ main input,main textarea,main button {
 /*  Page Footer styling  */
 #page-footer {
     height: 15vw;
-    /*max-height: 80px;*/
     background-color: #df5277;
 }
 #page-footer * {
@@ -293,8 +249,6 @@ main input,main textarea,main button {
 .contact {
     position: relative;
     width: 100%;
-    /*top: 15%;*/
-    /*left: 5%;*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -302,7 +256,6 @@ main input,main textarea,main button {
     align-items: baseline;
 }
 .contact>div {
-    /*display: inline-block;*/
     flex-basis: 34%;
     margin: 1vw 0 0 0;
     display: flex;
@@ -374,31 +327,17 @@ main input,main textarea,main button {
         max-height: 72px;
         height: 7.2vw;
         background-color: #fffabe;
-        /*position: relative;*/
         flex-direction: row;
         justify-content: space-around;
     }
     .page-header-bar * {display: inline-block;}
     .header-logo {
-        /*position: relative;*/
-        /*top: 50%*/;
-        /*left: 4.5%;*/
-        /*transform: translateY(-50%);*/
         width: 15.6vw;
         max-width: 156px;
         margin-top: 0;
     }
-    .header-logo img {
-        width: 100%;
-    }
-    /*.page-header-bar nav {
-        !*position: relative;*!
-        !*top: 50%;*!
-        !*left: 4.5%;*!
-        !*transform: translateY(-50%);*!
-    }*/
+    .header-logo img {width: 100%;}
     .page-header-bar nav ul {
-        /*padding-left: 6.5vw;*/
         margin-top: auto;
         margin-bottom: auto;
     }
@@ -411,7 +350,6 @@ main input,main textarea,main button {
         color: #515151;
         text-transform: uppercase;
         text-decoration: none;
-        /*color: inherit;*/
     }
     .page-header-bar nav a:hover {color: #d42551;}
     .header-logo img {max-width: 156px;}
@@ -419,9 +357,7 @@ main input,main textarea,main button {
     .jumbotron img {max-width: 100%;}
 
     /*  Page main styling  */
-    main {
-        width: 100%;
-    }
+    main {width: 100%;}
     main * {color: #6a6969;}
     main *::-webkit-input-placeholder {color: #6a6969;}
     main *:-moz-placeholder {color: #6a6969;}
@@ -460,50 +396,37 @@ main input,main textarea,main button {
         width: 100vw;
         max-width: 1000px;
     }
-    .bkgrd-our-macarons {
-        background-image: url("assets/images/our-macarons-background.png");
-    }
-    .bkgrd-gifts-parties {
-        background-image: url("assets/images/gifts-parties-background.png");
-    }
+    .bkgrd-our-macarons {background-image: url("assets/images/our-macarons-background.png");}
+    .bkgrd-gifts-parties {background-image: url("assets/images/gifts-parties-background.png");}
 
     /*  Flexbox column layout styling  */
     .flex-container {
         flex-direction: row;
         padding: 5.5vw 1.5vw 2vw 1.5vw;
     }
-    .flex-container>* {
-        padding: 2vw 2.2vw;
-    }
+    .flex-container>* {padding: 2vw 2.2vw;}
     .flex-item-1,.flex-item-2,.flex-item-3 {flex-grow: 1;}
     .flex-item-1 {flex: 1;}
     .flex-item-2 {flex: 2;}
     .flex-item-3 {flex: 3;}
-    .flex-mobile-hidden {
-        display: block;
-    }
+    .flex-mobile-hidden {display: block;}
     .flex-container img {
         width: 187px;
         max-width: 18.7vw;
     }
-    .flex-container input,.flex-container textarea,.flex-container button {
-        margin: 1.5vw 0;
-    }
-    .two-col input,.two-col textarea {
-        width: 100%;
-    }
+    .flex-container input,.flex-container textarea,.flex-container button {margin: 1.5vw 0;}
+    .two-col input,.two-col textarea {width: 100%;}
     .flex-container input,.flex-container button {
         height: 3.5vw;
         max-height: 35px;
     }
     .flex-container textarea {
-        /*display: block;
-        resize: none;*/
         height: 7vw;
         max-height: 70px;
     }
 
     /*  Column layouts styling  */
+    /*  This section to be depreciated in favor of Flexbox column layout styling once all pages have been moved over  */
     .one-col {
         box-sizing: border-box;
         width: 100%;
@@ -631,53 +554,29 @@ main input,main textarea,main button {
     .contact {
         position: relative;
         width: 100%;
-        /*top: 15%;*/
-        /*left: 5%;*/
         justify-content: space-around;
     }
     .contact>div {
-        /*display: inline-block;*/
-        /*width: 15%;*/
         flex-basis: 33%;
         margin: 1vw 0 0 0;
     }
-    .contact-mail {
-        /*background-image: url("assets/images/mail.png");
-        background-repeat: no-repeat;*/
-        text-indent: 2.7vw;
-    }
-    .contact-phone {
-        /*background-image: url("assets/images/phone.png");
-        background-repeat: no-repeat;*/
-        text-indent: 2.7vw;
-    }
-    .contact-social-media {
-        /*position: relative;*/
-        left: -4vw;
-    }
+    .contact-mail {text-indent: 2.7vw;}
+    .contact-phone {text-indent: 2.7vw;}
+    .contact-social-media {left: -4vw;}
     .contact-facebook {
-        /*position: relative;*/
-        /*left: 2vw;*/
         top: 0;
         height: 1.6vw;
     }
     .contact-twitter {
-       /* position: relative;*/
         left: 4vw;
         top: 0;
         height: 1.6vw;
     }
-    .copyright {
-        /*position: relative;*/
-        top: 1.5vw;
-        /*width: 100%;
-        text-align: center;*/
-    }
+    .copyright {top: 1.5vw;}
 }
 /*  Media queries for screen width > 1000px  */
 @media all and (min-width: 1000px) {
     /*  Page header styling  */
-    /*.page-header-bar nav ul {padding-left: 65px;}*/
     .page-header-bar nav a {font-size: 16px;}
 
     /*  Page main styling  */
@@ -685,22 +584,19 @@ main input,main textarea,main button {
         font-size: 20px;
         margin: 20px 0;
     }
-    main p,main li,main a,main input,main textarea,main button {font-size: 14px;
-        margin: 15px 0;}
+    main p,main li,main a,main input,main textarea,main button {
+        font-size: 14px;
+        margin: 15px 0;
+    }
     main ul {margin-bottom: 50px;}
 
     /*  Flexbox column layout styling  */
-    .flex-container {
-        padding: 55px 15px 20px 15px;
-    }
-    .flex-container>* {
-        padding: 20px 24px;
-    }
-    .flex-container input,.flex-container textarea,.flex-container button {
-        margin: 15px 0;
-    }
+    .flex-container {padding: 55px 15px 20px 15px;}
+    .flex-container>* {padding: 20px 24px;}
+    .flex-container input,.flex-container textarea,.flex-container button {margin: 15px 0;}
 
     /*  Column layouts styling  */
+    /*  This section to be depreciated in favor of Flexbox column layout styling once all pages have been moved over  */
     .one-col {padding: 50px 50px 70px 50px;}
     .col-left-25 img {
         margin: 115px 31.5px;
