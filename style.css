@@ -299,19 +299,6 @@ main input,main textarea,main button {
 /*  Media queries for screen width >= 668px  */
 @media screen and (min-width: 668px) {
     /*  Base body layout styling  */
-    body {
-        margin: 0;
-        font-size: 0;
-    }
-    body * {
-        font-size: initial;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .container {
-        max-width: 1000px;
-        width: 100vw;
-        margin: 0 auto;
-    }
     #page-header #page-main #page-footer {
         box-sizing: border-box;
         width: 100%;
@@ -323,38 +310,22 @@ main input,main textarea,main button {
         max-height: 472px;
     }
     .page-header-bar {
-        width: 100%;
         max-height: 72px;
         height: 7.2vw;
-        background-color: #fffabe;
         flex-direction: row;
         justify-content: space-around;
     }
-    .page-header-bar * {display: inline-block;}
     .header-logo {
         width: 15.6vw;
         max-width: 156px;
         margin-top: 0;
     }
-    .header-logo img {width: 100%;}
     .page-header-bar nav ul {
         margin-top: auto;
         margin-bottom: auto;
     }
-    .page-header-bar nav li {
-        margin-left: 1.5vw;
-        margin-right: 1.5vw;
-    }
-    .page-header-bar nav a {
-        font-size: 1.6vw;
-        color: #515151;
-        text-transform: uppercase;
-        text-decoration: none;
-    }
-    .page-header-bar nav a:hover {color: #d42551;}
+    .page-header-bar nav a {font-size: 1.6vw;}
     .header-logo img {max-width: 156px;}
-    .jumbotron {width: 100%;}
-    .jumbotron img {max-width: 100%;}
 
     /*  Page main styling  */
     main {width: 100%;}
