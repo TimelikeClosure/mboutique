@@ -238,33 +238,43 @@ main input,main textarea,main button {
 
 /*  Page Footer styling  */
 #page-footer {
-    height: 8vw;
-    max-height: 80px;
+    height: 21vw;
+    /*max-height: 80px;*/
     background-color: #df5277;
 }
 #page-footer * {
     color: white;
-    font-size: 1.2vw;
+    font-size: 2.6vw;
 }
 .contact {
     position: relative;
     width: 100%;
     top: 15%;
-    left: 5%;
+    /*left: 5%;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
 }
-.contact div {
-    display: inline-block;
-    width: 15%;
-    margin: 0 8%;
-    text-indent: 1.7vw;
+.contact>div {
+    /*display: inline-block;*/
+    flex-basis: 34%;
+    /*margin: 0 8%;*/
+    display: flex;
+    justify-content: center;
 }
 .contact-mail {
     background-image: url("assets/images/mail.png");
     background-repeat: no-repeat;
+    background-size: contain;
+    text-indent: 6vw;
 }
 .contact-phone {
     background-image: url("assets/images/phone.png");
     background-repeat: no-repeat;
+    background-size: contain;
+    text-indent: 6vw;
 }
 .contact-social-media {
     position: relative;
@@ -534,21 +544,24 @@ main input,main textarea,main button {
         position: relative;
         width: 100%;
         top: 15%;
-        left: 5%;
+        /*left: 5%;*/
+        justify-content: space-around;
     }
-    .contact div {
-        display: inline-block;
-        width: 15%;
-        margin: 0 8%;
-        text-indent: 1.7vw;
+    .contact>div {
+        /*display: inline-block;*/
+        /*width: 15%;*/
+        flex-basis: 33%;
+        /*margin: 0 8%;*/
     }
     .contact-mail {
         background-image: url("assets/images/mail.png");
         background-repeat: no-repeat;
+        text-indent: 1.7vw;
     }
     .contact-phone {
         background-image: url("assets/images/phone.png");
         background-repeat: no-repeat;
+        text-indent: 1.7vw;
     }
     .contact-social-media {
         position: relative;
