@@ -1,3 +1,5 @@
+/*  Pages index.html, our_macarons.html, gifts_parties.html to be converted to responsive flexbox layout  */
+
 /*  Base body layout styling  */
 body {
     margin: 0;
@@ -70,7 +72,11 @@ main p,main li,main a,main input,main textarea,main button {
     margin: 7.5vw 0;
 }
 main p {line-height: 120%;}
-main li {line-height: 120%;}
+main li {
+    line-height: 120%;
+    font-size: 3.5vw;
+    margin: 0;
+}
 main a {
     line-height: 120%;
     text-decoration: none;
@@ -336,13 +342,13 @@ main input,main textarea,main button {
         font-size: 2vw;
         margin: 2vw 0;
     }
-    main p,main li,main a,main input,main textarea,main button {
+    main p,main a,main input,main textarea,main button {
         font-size: 1.4vw;
         margin: 1.5vw 0;
     }
     main p {line-height: 150%;}
     main ul {margin-bottom: 50px;}
-    main li {line-height: 120%;}
+    main li {font-size: 1.4vw;}
     main a {
         line-height: 150%;
     }
@@ -470,6 +476,7 @@ main input,main textarea,main button {
     }
     .schedule-day * {
         margin: 0;
+        line-height: 3.7vw;
     }
     .schedule-time {
         height: 3.7vw;
@@ -534,11 +541,12 @@ main input,main textarea,main button {
         font-size: 20px;
         margin: 20px 0;
     }
-    main p,main li,main a,main input,main textarea,main button {
+    main p,main a,main input,main textarea,main button {
         font-size: 14px;
         margin: 15px 0;
     }
     main ul {margin-bottom: 50px;}
+    main li {font-size: 14px;}
 
     /*  Flexbox column layout styling  */
     .flex-container {padding: 55px 15px 20px 15px;}
@@ -560,6 +568,7 @@ main input,main textarea,main button {
     }
     .schedule>div {margin: 7.375px;}
     .schedule div div {padding: 4px;}
+    .schedule-day * {line-height: 37px;}
     .schedule-time * {font-size: 12px;}
     .schedule-flavor * {font-size: 12px;}
     .schedule-flavor img {right: 4px;}
