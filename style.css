@@ -316,37 +316,44 @@ main input,main textarea,main button {
         max-height: 72px;
         height: 7.2vw;
         background-color: #fffabe;
-        position: relative;
+        /*position: relative;*/
+        flex-direction: row;
+        justify-content: space-around;
     }
     .page-header-bar * {display: inline-block;}
     .header-logo {
-        position: relative;
-        top: 50%;
-        left: 4.5%;
-        transform: translateY(-50%);
+        /*position: relative;*/
+        /*top: 50%*/;
+        /*left: 4.5%;*/
+        /*transform: translateY(-50%);*/
         width: 15.6vw;
         max-width: 156px;
+        margin-top: 0;
     }
     .header-logo img {
         width: 100%;
     }
-    .page-header-bar nav {
-        position: relative;
-        top: 50%;
-        left: 4.5%;
-        transform: translateY(-50%);
+    /*.page-header-bar nav {
+        !*position: relative;*!
+        !*top: 50%;*!
+        !*left: 4.5%;*!
+        !*transform: translateY(-50%);*!
+    }*/
+    .page-header-bar nav ul {
+        /*padding-left: 6.5vw;*/
+        margin-top: auto;
+        margin-bottom: auto;
     }
-    .page-header-bar nav ul {padding-left: 6.5vw;}
     .page-header-bar nav li {
-        font-size: 1.6vw;
-        color: #515151;
-        text-transform: uppercase;
         margin-left: 1.5vw;
         margin-right: 1.5vw;
     }
     .page-header-bar nav a {
+        font-size: 1.6vw;
+        color: #515151;
+        text-transform: uppercase;
         text-decoration: none;
-        color: inherit;
+        /*color: inherit;*/
     }
     .page-header-bar nav a:hover {color: #d42551;}
     .header-logo img {max-width: 156px;}
@@ -565,8 +572,8 @@ main input,main textarea,main button {
 /*  Media queries for screen width > 1000px  */
 @media all and (min-width: 1000px) {
     /*  Page header styling  */
-    .page-header-bar nav ul {padding-left: 65px;}
-    .page-header-bar nav li {font-size: 16px;}
+    /*.page-header-bar nav ul {padding-left: 65px;}*/
+    .page-header-bar nav a {font-size: 16px;}
 
     /*  Page main styling  */
     main h1 {font-size: 20px;}
