@@ -69,24 +69,27 @@ body * {
 main {
     width: 100%;
 }
-main * {
-    color: #6a6969;
-}
-article h1 {
+main * {color: #6a6969;}
+main *::-webkit-input-placeholder {color: #6a6969;}
+main *:-moz-placeholder {color: #6a6969;}
+main *::-moz-placeholder {color: #6a6969;}
+main *:-ms-input-placeholder {color: #6a6969;}
+main h1 {
     font-size: 2vw;
     font-weight: normal;
 }
-article p,article li,article a {
+main p,main li,main a,main input,main textarea,main button {
     font-size: 1.4vw;
     text-align: justify;
 }
-article p {line-height: 150%;}
-article li {line-height: 120%;}
-article a {
+main p {line-height: 150%;}
+main li {line-height: 120%;}
+main a {
     line-height: 150%;
     text-decoration: none;
     color: #df5277;
 }
+main input,main textarea,main button {}
 
 /*  Background image styling  */
 .bkgrd-image {
@@ -163,7 +166,6 @@ article a {
     max-height: 37px;
 }
 .schedule-day * {
-    font-size: 1.4vw;
     margin: 0;
 }
 .schedule-time {
@@ -251,8 +253,9 @@ article a {
     .page-header-bar nav li {font-size: 16px;}
 
     /*  Page main styling  */
-    article h1 {font-size: 20px;}
-    article p,article li,article a {font-size: 14px;}
+    main h1 {font-size: 20px;}
+    main p,main li,main a,main input,main textarea,main button {font-size: 14px;}
+    main input,main textarea,main button {}
 
     /*  Column layouts styling  */
     .col-left-25 img {
@@ -268,7 +271,6 @@ article a {
     }
     .schedule>div {margin: 7.375px;}
     .schedule div div {padding: 4px;}
-    .schedule-day * {font-size: 14px;}
     .schedule-time * {font-size: 12px;}
     .schedule-flavor * {font-size: 12px;}
     .schedule-flavor img {right: 4px;}
