@@ -89,7 +89,11 @@ main a {
     text-decoration: none;
     color: #df5277;
 }
-main input,main textarea,main button {}
+main input,main textarea,main button {
+    display: block;
+    border: none;
+    background-color: #f5f5f5;
+}
 
 /*  Background image styling  */
 .bkgrd-image {
@@ -121,6 +125,30 @@ main input,main textarea,main button {}
 .two-col {
     box-sizing: border-box;
     height: 100%;
+}
+.two-col input,.two-col textarea,.two-col button {
+    margin: 0.8vw 0;
+}
+.two-col input,.two-col textarea {
+    width: 100%;
+}
+.two-col input,.two-col button {
+    height: 3.5vw;
+    max-height: 35px;
+}
+.two-col textarea {
+    display: block;
+    resize: none;
+    height: 7vw;
+    max-height: 70px;
+}
+.two-col button {
+    display: block;
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%);
+    width: 50%;
+    text-align: center;
 }
 .col-left-25 {
     width: 25vw;
@@ -258,11 +286,11 @@ main input,main textarea,main button {}
     main input,main textarea,main button {}
 
     /*  Column layouts styling  */
+    .one-col {padding: 50px 50px 70px 50px;}
     .col-left-25 img {
         margin: 115px 31.5px;
         max-width: 187px;
     }
-    .one-col {padding: 50px 50px 70px 50px;}
 
     /*  Schedule styling  */
     .schedule {
