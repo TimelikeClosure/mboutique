@@ -7,6 +7,10 @@
     Re-design schedule on mobile.  Possible ideas:
         Vertically stacked.
         Accordion.
+    Remove unnecessary <p> tags.
+    Remove old inline-block solution.
+    Change .schedule to .schedule-container.
+
 */
 
 /*  Base body layout styling  */
@@ -23,7 +27,7 @@ body * {
     width: 100vw;
     margin: 0 auto;
 }
-#page-header #page-main #page-footer {
+#page-header,#page-main,#page-footer {
     box-sizing: border-box;
     width: 100%;
 }
