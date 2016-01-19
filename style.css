@@ -13,6 +13,7 @@
     Move fixed unit max-width and max-height to (max-width > 1000px) media query.
     Re-allocate vw and % units, where appropriate.
     Recheck necessity of all * selectors.
+    Check adding additional purpose classes inside .flex-* classes
 */
 
 /*  Base body layout styling  */
