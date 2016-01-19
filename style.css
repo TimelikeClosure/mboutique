@@ -15,6 +15,7 @@
     Recheck necessity of all * selectors.
     Check adding additional purpose classes inside .flex-* classes
     Change .schedule to .schedule-container.
+    Remove relative positioning inside footer.
 */
 
 /*  Base body layout styling  */
