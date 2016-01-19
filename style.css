@@ -7,13 +7,14 @@
     Re-design schedule on mobile.  Possible ideas:
         Vertically stacked.
         Accordion.
-    Remove unnecessary <p> tags.
+    Look at necessity <p> tags, particularly those in .schedule divs.
     Remove old inline-block solution.
     Change .schedule to .schedule-container.
     Move fixed unit max-width and max-height to (max-width > 1000px) media query.
     Re-allocate vw and % units, where appropriate.
     Recheck necessity of all * selectors.
     Check adding additional purpose classes inside .flex-* classes
+    Change .schedule to .schedule-container.
 */
 
 /*  Base body layout styling  */
