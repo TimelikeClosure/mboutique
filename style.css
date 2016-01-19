@@ -10,7 +10,7 @@
     Remove unnecessary <p> tags.
     Remove old inline-block solution.
     Change .schedule to .schedule-container.
-
+    Move fixed unit max-width and max-height to (max-width > 1000px) media query.
 */
 
 /*  Base body layout styling  */
