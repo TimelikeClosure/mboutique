@@ -1,4 +1,13 @@
 /*  Pages index.html, our_macarons.html, gifts_parties.html to be converted to responsive flexbox layout  */
+/*  Notes of things to do:
+    Have lists center on page on mobile.
+    Have main background images disappear on mobile.
+    Resize fonts in rem, with font-size % on <html>.
+    Make inner main list on gifts_parties.html take up full screen width.
+    Re-design schedule on mobile.  Possible ideas:
+        Vertically stacked.
+        Accordion.
+*/
 
 /*  Base body layout styling  */
 body {
