@@ -1,4 +1,6 @@
-/*  Pages index.html, our_macarons.html, gifts_parties.html to be converted to responsive flexbox layout  */
+/*
+    Pages index.html, gifts_parties.html to be converted to responsive flexbox layout --visual, large
+*/
 /*  Notes of things to do:
     Have lists center on page on mobile.  --visual, small
     Have main background images disappear on mobile.  --visual, small
@@ -82,6 +84,7 @@ main h1 {
     font-size: 5vw;
     font-weight: normal;
     margin: 9.5vw 0;
+    text-align: center;
 }
 main p,main li,main a,main input,main textarea,main button {
     font-size: 3.5vw;
@@ -89,6 +92,10 @@ main p,main li,main a,main input,main textarea,main button {
     margin: 7.5vw 0;
 }
 main p {line-height: 120%;}
+main ul {
+    margin-left: auto;
+    margin-right: auto;
+}
 main li {
     line-height: 120%;
     font-size: 3.5vw;
@@ -104,8 +111,8 @@ main input,main textarea,main button {
     border: none;
     background-color: #f5f5f5;
 }
-
-/*  Background image styling  */
+/*
+!*  Background image styling  *!
 .bkgrd-image {
     background-repeat: no-repeat;
     background-position: center center;
@@ -114,7 +121,7 @@ main input,main textarea,main button {
     max-width: 1000px;
 }
 .bkgrd-our-macarons {background-image: url("assets/images/our-macarons-background.png");}
-.bkgrd-gifts-parties {background-image: url("assets/images/gifts-parties-background.png");}
+.bkgrd-gifts-parties {background-image: url("assets/images/gifts-parties-background.png");}*/
 
 /*  Flexbox column layout styling  */
 .flex-container {
@@ -358,6 +365,7 @@ main input,main textarea,main button {
     main h1 {
         font-size: 2vw;
         margin: 2vw 0;
+        text-align: left;
     }
     main p,main a,main input,main textarea,main button {
         font-size: 1.4vw;
