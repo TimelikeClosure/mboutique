@@ -2,8 +2,6 @@
     Pages index.html, gifts_parties.html to be converted to responsive flexbox layout --visual, large
 */
 /*  Notes of things to do:
-    Have lists center on page on mobile.  --visual, small
-    Have main background images disappear on mobile.  --visual, small
     Resize fonts in rem, with font-size % on <html>.  --refactor, large
     Make inner main list on gifts_parties.html take up full screen width.  --visual,
     Re-design schedule on mobile.  Possible ideas:  --visual, large
@@ -93,8 +91,11 @@ main p,main li,main a,main input,main textarea,main button {
 }
 main p {line-height: 120%;}
 main ul {
-    margin-left: auto;
-    margin-right: auto;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-left: 0;
 }
 main li {
     line-height: 120%;
@@ -372,7 +373,13 @@ main input,main textarea,main button {
         margin: 1.5vw 0;
     }
     main p {line-height: 150%;}
-    main ul {margin-bottom: 50px;}
+    main ul {
+        display: block;
+        position: static;
+        transform: translateX(0);
+        margin-bottom: 50px;
+        padding-left: 4vw;
+    }
     main li {font-size: 1.4vw;}
     main a {
         line-height: 150%;
@@ -570,7 +577,10 @@ main input,main textarea,main button {
         font-size: 14px;
         margin: 15px 0;
     }
-    main ul {margin-bottom: 50px;}
+    main ul {
+        margin-bottom: 50px;
+        padding-left: 40px;
+    }
     main li {font-size: 14px;}
 
     /*  Flexbox column layout styling  */
