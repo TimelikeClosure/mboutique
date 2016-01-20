@@ -14,7 +14,6 @@
     Re-allocate vw and % units, where appropriate.
     Recheck necessity of all * selectors.
     Check adding additional purpose classes inside .flex-* classes
-    Change .schedule to .schedule-container.
     Remove relative positioning inside footer (perhaps turning .social-media into its own flexbox).
 */
 
