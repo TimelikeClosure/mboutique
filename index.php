@@ -1,3 +1,15 @@
+<?php
+    $sidebarImage = [
+        'src' => 'assets/images/macarons-image.png',
+        'alt' => 'Vector graphic of macarons'
+    ];
+    $holidayStyleSheet = false;
+    $currentDate = date("m/d");
+    switch ($currentDate) {
+        default:
+            break;
+    }
+?>
 <!--Add Your home page HTML here-->
 <!DOCTYPE html>
 
@@ -8,6 +20,13 @@
         <title>Welcome to MBoutique!</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <link href="style.css" rel="stylesheet" type="text/css" />
+        <?php
+            if ($holidayStyleSheet) {
+                ?>
+                    <link href="<?=$holidayStyleSheet?>" rel="stylesheet" type="text/css" />
+                <?php
+            }
+        ?>
     </head>
 
     <body>
@@ -52,7 +71,7 @@
 
                     <!--  Begin first column image  -->
                     <div class="two-col col-left-25 flex-mobile-hidden">
-                        <img src="assets/images/macarons-image.png" alt="Vector graphic of macarons" />
+                        <img src="<?="{$sidebarImage['src']}"?>" alt="<?="{$sidebarImage['alt']}"?>" />
                     </div>
                     <!--  Close first column image  -->
 
