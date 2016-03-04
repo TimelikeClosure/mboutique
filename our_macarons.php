@@ -4,7 +4,7 @@
 
     <head>
         <meta charset="utf-8" />
-        <title>Let's eat macarons!</title>
+        <title>Our macarons are freshly made by hand</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <link href="style.css" rel="stylesheet" type="text/css" />
     </head>
@@ -25,10 +25,10 @@
                     <!--  Begin navigation bar  -->
                     <nav>
                         <ul>
-                            <li><a href="index.html">welcome</a></li>
-                            <li><a href="our_macarons.html">our macarons</a></li>
-                            <li><a href="gifts_parties.html">gifts &amp; parties</a></li>
-                            <li><a href="contact.html">contact</a></li>
+                            <li><a href="index.php">welcome</a></li>
+                            <li><a href="our_macarons.php">our macarons</a></li>
+                            <li><a href="gifts_parties.php">gifts &amp; parties</a></li>
+                            <li><a href="contact.php">contact</a></li>
                         </ul>
                     </nav>
                     <!--  Close navigation bar  -->
@@ -37,38 +37,42 @@
 
                 <!--  Begin jumbotron  -->
                 <div class="jumbotron">
-                    <img src="assets/images/gifts-parties-image.png" alt="Macarons in a gift basket" />
+                    <img src="assets/images/our-macarons-image.png" alt="Close-up of macarons" />
                 </div>
                 <!--  Close jumbotron  -->
             </header>
             <!--  Close page header  -->
 
             <!--  Begin page main  -->
-            <main id="page-main" class="bkgrd-image bkgrd-gifts-parties">
+            <main id="page-main" class="bkgrd-image bkgrd-our-macarons">
+                <!--  Begin one column article  -->
                 <div class="flex-container">
-                    <!--  Begin one column article  -->
                     <article class="flex-item-1 flex-item-baseline">
-                        <h1>Let's eat macarons!</h1>
-                        <p>We make it easy to share la passion du macaron with your friends, family and colleagues. Choose for our array of premium gift options, or we can create a custom solution. Contact us when you need help planning your celebration! <a href="mail-to:orders@mboutique.com">orders@mboutique.com</a></p>
-                        <div class="col-left-51">
-                            <h1>Gift boxes</h1>
-                            <p>Our signature gift boxes make macarons the perfect gift for any occasion.</p>
+                        <h1>Our macarons are freshly made by hand</h1>
+                        <p>The vivid hues of our macarons reflect the natural flavors and essences that infuse the ganache filling of these delicious almond cookies - each with its own personality, and all of them are made to savour for their delicacy and unique character.</p>
+                        <div>
+                            <h1>Classics</h1>
                             <ul>
-                                <li>gift box of 6 macarons in raspberrywhite - $10</li>
-                                <li>gift box of 12 macarons in white, pistachio, or violet - $20</li>
-                                <li>gift box of 24 macarons in violet - $40</li>
-                                <li>gift box of 36 macarons in silver - $60</li>
-                                <li>gift box &#0224; la ronde of 60 macarons in violet or silver - $120</li>
-                            </ul>
-                            <h1>Party tower</h1>
-                            <p>Our 5-tiered party tower becomes the centerpiece of any special event or private celebration, elegantly presenting your unique selection of sixty macarons.</p>
-                            <ul>
-                                <li>tower of 60 macarons - $120</li>
+                                <li>caribbean chocolate</li>
+                                <li>coconut</li>
+                                <li>colombian coffee</li>
+                                <li>green tea</li>
+                                <li>lemon</li>
+                                <li>madagascar vanilla</li>
+                                <li>passion fruit</li>
+                                <li>rose</li>
+                                <li>raspbery</li>
+                                <li>tiffany blue</li>
+                                <li>sicilian pistachio</li>
+                                <li>sweet wedding almond</li>
+                                <li>violet cassis</li>
+                                <li>salted caramel</li>
                             </ul>
                         </div>
+                        <p>After purchase we recommend keeping macarons in the refridgerator, let them come to room temperature before serving - about 10 minutes. For best degustation, out macarons should be consumed within 3 days.</p>
                     </article>
-                    <!--  Close one column article  -->
                 </div>
+                <!--  Close one column article  -->
             </main>
             <!--  Close page main  -->
 

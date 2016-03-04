@@ -25,10 +25,10 @@
                     <!--  Begin navigation bar  -->
                     <nav>
                         <ul>
-                            <li><a href="index.html">welcome</a></li>
-                            <li><a href="our_macarons.html">our macarons</a></li>
-                            <li><a href="gifts_parties.html">gifts &amp; parties</a></li>
-                            <li><a href="contact.html">contact</a></li>
+                            <li><a href="index.php">welcome</a></li>
+                            <li><a href="our_macarons.php">our macarons</a></li>
+                            <li><a href="gifts_parties.php">gifts &amp; parties</a></li>
+                            <li><a href="contact.php">contact</a></li>
                         </ul>
                     </nav>
                     <!--  Close navigation bar  -->
