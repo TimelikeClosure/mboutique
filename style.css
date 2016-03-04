@@ -1,1 +1,627 @@
-/* Add your CSS here */
+/*
+    Pages index.html, gifts_parties.html to be converted to responsive flexbox layout --visual, large
+*/
+/*  Notes of things to do:
+    Resize fonts in rem, with font-size % on <html>.  --refactor, large
+    Make inner main list on gifts_parties.html take up full screen width.  --visual,
+    Re-design schedule on mobile.  Possible ideas:  --visual, large
+        Vertically stacked.
+        Accordion.
+    Look at necessity <p> tags, particularly those in .schedule divs.  --refactor
+    Remove old inline-block solution.  --refactor, small
+    Change .schedule to .schedule-container.  --refactor, small
+    Move fixed unit max-width and max-height to (max-width > 1000px) media query.  --refactor, medium
+    Re-allocate vw and % units, where appropriate.  --refactor, medium, possible overlap / conflict with rem change
+    Recheck necessity of all * selectors.  --refactor
+    Check adding additional purpose classes inside .flex-* classes  --refactor
+    Remove relative positioning inside footer (perhaps turning .social-media into its own flexbox).  --refactor
+    Fix all the spelling errors from the instructions?  --visual
+*/
+
+/*  Base body layout styling  */
+body {
+    margin: 0;
+    font-size: 0;
+}
+body * {
+    font-size: initial;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    max-width: 1000px;
+    width: 100vw;
+    margin: 0 auto;
+}
+#page-header,#page-main,#page-footer {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/*  Page header styling  */
+.page-header-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #fffabe;
+}
+.header-logo {
+    width: 38.933vw;
+    flex-grow: 0;
+    margin-top: 2.667vw;
+}
+.header-logo img {width: 100%;}
+.page-header-bar nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 1.867vw;
+}
+.page-header-bar nav li {
+    display: inline-block;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+.page-header-bar nav a {
+    font-size: 2.6vw;
+    color: #515151;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.page-header-bar nav a:hover {color: #d42551;}
+.jumbotron {width: 100%;}
+.jumbotron img {max-width: 100%;}
+
+/*  Page main styling  */
+main {width: 100%;}
+main * {color: #6a6969;}
+main *::-webkit-input-placeholder {color: #6a6969;}
+main *:-moz-placeholder {color: #6a6969;}
+main *::-moz-placeholder {color: #6a6969;}
+main *:-ms-input-placeholder {color: #6a6969;}
+main h1 {
+    font-size: 5vw;
+    font-weight: normal;
+    margin: 9.5vw 0;
+    text-align: center;
+}
+main p,main li,main a,main input,main textarea,main button {
+    font-size: 3.5vw;
+    text-align: justify;
+    margin: 7.5vw 0;
+}
+main p {line-height: 120%;}
+main ul {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-left: 0;
+}
+main li {
+    line-height: 120%;
+    font-size: 3.5vw;
+    margin: 0;
+}
+main a {
+    line-height: 120%;
+    text-decoration: none;
+    color: #df5277;
+}
+main input,main textarea,main button {
+    display: block;
+    border: none;
+    background-color: #f5f5f5;
+}
+/*
+!*  Background image styling  *!
+.bkgrd-image {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    width: 100vw;
+    max-width: 1000px;
+}
+.bkgrd-our-macarons {background-image: url("assets/images/our-macarons-background.png");}
+.bkgrd-gifts-parties {background-image: url("assets/images/gifts-parties-background.png");}*/
+
+/*  Flexbox column layout styling  */
+.flex-container {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2vw 10vw;
+}
+.flex-container>* {width: 100%;}
+.flex-item-baseline {align-self: baseline;}
+.flex-mobile-hidden {display: none;}
+.flex-container input,.flex-container textarea,.flex-container button {margin: 3.8vw 0;}
+.flex-container form,.flex-container input,.flex-container textarea {width: 100%;}
+.flex-container input,.flex-container button {height: 8.75vw;}
+.flex-container textarea {
+    resize: none;
+    height: 17.5vw;
+}
+.flex-container button {
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%);
+    width: 50%;
+    text-align: center;
+    padding: 0;
+}
+
+
+/*  Column layouts styling  */
+/*  This section to be depreciated in favor of Flexbox column layout styling once all pages have been moved over  */
+.one-col {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5vw 5vw 7vw 5vw;
+}
+.one-col h1 {margin: 2vw 0;}
+.one-col ul {margin-bottom: 50px;}
+.two-col-container {
+    display: flex;
+    justify-content: center;
+}
+.two-col {
+    box-sizing: border-box;
+    height: 100%;
+}
+.two-col input,.two-col textarea,.two-col button {
+    margin: 0.8vw 0;
+}
+.two-col input,.two-col textarea {
+    width: 100%;
+}
+.two-col input,.two-col button {
+    height: 3.5vw;
+    max-height: 35px;
+}
+.two-col textarea {
+    display: block;
+    resize: none;
+    height: 7vw;
+    max-height: 70px;
+}
+.two-col button {
+    display: block;
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%);
+    width: 50%;
+    text-align: center;
+}
+.col-left-25 {
+    width: 25vw;
+    max-width: 250px;
+}
+.col-left-25 img {
+    margin: 11.5vw 3.15vw;
+    max-width: 18.7vw;
+}
+.col-left-51 {
+    width: 51vw;
+    max-width: 510px;
+}
+.col-right-75 {
+    width: 75%;
+    padding: 4%;
+    margin: 1.5vw 0;
+}
+
+/*  Schedule styling  */
+.schedule {
+    width: 100%;
+    padding: 0.7375vw;
+    margin-bottom: 5vw;
+}
+.schedule>div {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0.7375vw;
+    background-color: #fffabe;
+    height: 14vw;
+    max-height: 140px;
+    width: 12.6vw;
+    max-width: 126px;
+}
+.schedule div div {
+    position: relative;
+    box-sizing: border-box;
+    padding: 0.4vw;
+}
+.schedule-day {
+    height: 3.7vw;
+    max-height: 37px;
+}
+.schedule-day * {margin: 0;}
+.schedule-time {
+    height: 3.7vw;
+    max-height: 37px;
+}
+.schedule-time * {
+    font-size: 1.2vw;
+    margin: 0;
+}
+.schedule-flavor {
+    height: 3.3vw;
+    max-height: 33px;
+}
+.schedule-flavor * {
+    font-size: 1.2vw;
+    margin: 0;
+}
+.schedule-flavor img {
+    position: absolute;
+    right: 0.4vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.coconut {background-color: #824603;}
+.vanilla {background-color: #df5277;}
+.lemon {background-color: #a2304e;}
+.almond {background-color: #c39005;}
+.coconut *,.vanilla *,.lemon *,.almond * {color: white;}
+
+
+/*  Page Footer styling  */
+#page-footer {
+    height: 15vw;
+    background-color: #df5277;
+}
+#page-footer * {
+    color: white;
+    font-size: 2.6vw;
+}
+.contact {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+.contact>div {
+    flex-basis: 34%;
+    margin: 1vw 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+.contact-mail {
+    background-image: url("assets/images/mail.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-indent: 6vw;
+}
+.contact-phone {
+    background-image: url("assets/images/phone.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-indent: 6vw;
+}
+.contact-social-media {
+    position: relative;
+    left: -4vw;
+}
+.contact-facebook {
+    position: relative;
+    left: 2vw;
+    top: 0.5vw;
+    height: 3vw;
+}
+.contact-twitter {
+    position: relative;
+    left: 5vw;
+    top: 0.5vw;
+    height: 3vw;
+}
+.copyright {
+    position: relative;
+    top: 2vw;
+    width: 100%;
+    text-align: center;
+}
+
+/*  Media queries for screen width >= 668px  */
+@media screen and (min-width: 668px) {
+    /*  Base body layout styling  */
+    #page-header #page-main #page-footer {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    /*  Page header styling  */
+    #page-header {
+        height: 47.2vw;
+        max-height: 472px;
+    }
+    .page-header-bar {
+        max-height: 72px;
+        height: 7.2vw;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .header-logo {
+        width: 15.6vw;
+        max-width: 156px;
+        margin-top: 0;
+    }
+    .page-header-bar nav ul {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .page-header-bar nav a {font-size: 1.6vw;}
+    .header-logo img {max-width: 156px;}
+
+    /*  Page main styling  */
+    main *::-webkit-input-placeholder {color: #6a6969;}
+    main *:-moz-placeholder {color: #6a6969;}
+    main *::-moz-placeholder {color: #6a6969;}
+    main *:-ms-input-placeholder {color: #6a6969;}
+    main h1 {
+        font-size: 2vw;
+        margin: 2vw 0;
+        text-align: left;
+    }
+    main p,main a,main input,main textarea,main button {
+        font-size: 1.4vw;
+        margin: 1.5vw 0;
+    }
+    main p {line-height: 150%;}
+    main ul {
+        display: block;
+        position: static;
+        transform: translateX(0);
+        margin-bottom: 50px;
+        padding-left: 4vw;
+    }
+    main li {font-size: 1.4vw;}
+    main a {
+        line-height: 150%;
+    }
+    hr {display: none;}
+
+    /*  Background image styling  */
+    .bkgrd-image {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% auto;
+        width: 100vw;
+        max-width: 1000px;
+    }
+    .bkgrd-our-macarons {background-image: url("assets/images/our-macarons-background.png");}
+    .bkgrd-gifts-parties {background-image: url("assets/images/gifts-parties-background.png");}
+
+    /*  Flexbox column layout styling  */
+    .flex-container {
+        flex-direction: row;
+        padding: 5.5vw 1.5vw 2vw 1.5vw;
+    }
+    .flex-container>* {padding: 2vw 2.2vw;}
+    .flex-item-1 {flex: 1;}
+    .flex-item-2 {flex: 2;}
+    .flex-item-3 {flex: 3;}
+    .flex-mobile-hidden {display: block;}
+    .flex-container img {
+        width: 187px;
+        max-width: 18.7vw;
+    }
+    .flex-container input,.flex-container textarea,.flex-container button {margin: 1.5vw 0;}
+    .two-col input,.two-col textarea {width: 100%;}
+    .flex-container input,.flex-container button {
+        height: 3.5vw;
+        max-height: 35px;
+    }
+    .flex-container textarea {
+        height: 7vw;
+        max-height: 70px;
+    }
+
+    /*  Column layouts styling  */
+    /*  This section to be depreciated in favor of Flexbox column layout styling once all pages have been moved over  */
+    .one-col {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 5vw 5vw 7vw 5vw;
+    }
+    .one-col h1 {margin: 2vw 0;}
+    .one-col ul {margin-bottom: 50px;}
+    .two-col-container {
+        display: flex;
+        justify-content: center;
+    }
+    .two-col {
+        box-sizing: border-box;
+        height: 100%;
+    }
+    .two-col input,.two-col textarea,.two-col button {
+        margin: 0.8vw 0;
+    }
+    .two-col input,.two-col textarea {
+        width: 100%;
+    }
+    .two-col input,.two-col button {
+        height: 3.5vw;
+        max-height: 35px;
+    }
+    .two-col textarea {
+        display: block;
+        resize: none;
+        height: 7vw;
+        max-height: 70px;
+    }
+    .two-col button {
+        display: block;
+        position: relative;
+        left: 100%;
+        transform: translateX(-100%);
+        width: 50%;
+        text-align: center;
+    }
+    .col-left-25 {
+        width: 25vw;
+        max-width: 250px;
+    }
+    .col-left-25 img {
+        margin: 11.5vw 3.15vw;
+        max-width: 18.7vw;
+    }
+    .col-left-51 {
+        width: 51vw;
+        max-width: 510px;
+    }
+    .col-right-75 {
+        width: 75%;
+        padding: 4%;
+        margin: 1.5vw 0;
+    }
+
+    /*  Schedule styling  */
+    .schedule {
+        width: 100%;
+        padding: 0.7375vw;
+        margin-bottom: 5vw;
+    }
+    .schedule>div {
+        box-sizing: border-box;
+        display: inline-block;
+        margin: 0.7375vw;
+        background-color: #fffabe;
+        height: 14vw;
+        max-height: 140px;
+        width: 12.6vw;
+        max-width: 126px;
+    }
+    .schedule div div {
+        position: relative;
+        box-sizing: border-box;
+        padding: 0.4vw;
+    }
+    .schedule-day {
+        height: 3.7vw;
+        max-height: 37px;
+    }
+    .schedule-day * {
+        margin: 0;
+        line-height: 3.7vw;
+    }
+    .schedule-time {
+        height: 3.7vw;
+        max-height: 37px;
+    }
+    .schedule-time * {
+        font-size: 1.2vw;
+        margin: 0;
+    }
+    .schedule-flavor {
+        height: 3.3vw;
+        max-height: 33px;
+    }
+    .schedule-flavor * {
+        font-size: 1.2vw;
+        margin: 0;
+    }
+    .schedule-flavor img {
+        position: absolute;
+        right: 0.4vw;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .coconut {background-color: #824603;}
+    .vanilla {background-color: #df5277;}
+    .lemon {background-color: #a2304e;}
+    .almond {background-color: #c39005;}
+    .coconut *,.vanilla *,.lemon *,.almond * {color: white;}
+
+
+    /*  Page Footer styling  */
+    #page-footer {
+        height: 8vw;
+        max-height: 80px;
+    }
+    #page-footer * {font-size: 1.2vw;}
+    .contact {justify-content: space-around;}
+    .contact>div {
+        flex-basis: 33%;
+        margin: 1vw 0 0 0;
+    }
+    .contact-mail {text-indent: 2.7vw;}
+    .contact-phone {text-indent: 2.7vw;}
+    .contact-facebook {
+        top: 0;
+        height: 1.6vw;
+    }
+    .contact-twitter {
+        left: 4vw;
+        top: 0;
+        height: 1.6vw;
+    }
+    .copyright {top: 1.5vw;}
+}
+/*  Media queries for screen width > 1000px  */
+@media all and (min-width: 1000px) {
+    /*  Page header styling  */
+    .page-header-bar nav a {font-size: 16px;}
+
+    /*  Page main styling  */
+    main h1 {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    main p,main a,main input,main textarea,main button {
+        font-size: 14px;
+        margin: 15px 0;
+    }
+    main ul {
+        margin-bottom: 50px;
+        padding-left: 40px;
+    }
+    main li {font-size: 14px;}
+
+    /*  Flexbox column layout styling  */
+    .flex-container {padding: 55px 15px 20px 15px;}
+    .flex-container>* {padding: 20px 24px;}
+    .flex-container input,.flex-container textarea,.flex-container button {margin: 15px 0;}
+
+    /*  Column layouts styling  */
+    /*  This section to be depreciated in favor of Flexbox column layout styling once all pages have been moved over  */
+    .one-col {padding: 50px 50px 70px 50px;}
+    .col-left-25 img {
+        margin: 115px 31.5px;
+        max-width: 187px;
+    }
+
+    /*  Schedule styling  */
+    .schedule {
+        padding: 7.375px;
+        margin-bottom: 50px;
+    }
+    .schedule>div {margin: 7.375px;}
+    .schedule div div {padding: 4px;}
+    .schedule-day * {line-height: 37px;}
+    .schedule-time * {font-size: 12px;}
+    .schedule-flavor * {font-size: 12px;}
+    .schedule-flavor img {right: 4px;}
+
+    /*  Page footer styling  */
+    #page-footer * {font-size: 12px;}
+    .contact>div {margin-top: 10px;}
+    .contact-mail {text-indent: 27px;}
+    .contact-phone {text-indent: 27px;}
+    .contact-social-media {left: -40px;}
+    .contact-facebook {
+        left: 20px;
+        height: 16px;
+    }
+    .contact-twitter {
+        left: 40px;
+        height: 16px;
+    }
+    .copyright {top: 15px;}
+}
