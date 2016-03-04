@@ -1,14 +1,20 @@
 <?php
     $holidayStyleSheet = false;
+    $logoImage = [
+        'src' => 'assets/images/logo.png',
+        'alt' => 'MBoutique logo'
+    ];
     $sidebarImage = [
         'src' => 'assets/images/macarons-image.png',
         'alt' => 'Vector graphic of macarons'
     ];
     $currentDate = date("m/d");
     switch ($currentDate) {
-        case "03/04":
+        case "07/04":
             $holidayStyleSheet = "4th-of-july.css";
+            $logoImage['src'] = 'assets/images/logo-inverted.png';
             $sidebarImage['src'] = 'assets/images/macarons-4th-of-july.jpg';
+            $sidebarImage['alt'] = '';
             break;
         default:
             break;
@@ -42,7 +48,7 @@
                 <div class="page-header-bar" >
                     <!--  Begin header logo  -->
                     <div class="header-logo">
-                        <img src="assets/images/logo.png" />
+                        <img src="<?="{$logoImage['src']}"?>" alt="<?="{$logoImage['alt']}"?>" />
                     </div>
                     <!--  Close header logo  -->
 

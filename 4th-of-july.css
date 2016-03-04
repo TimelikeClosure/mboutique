@@ -1,10 +1,14 @@
 
 .page-header-bar {
-    background-color: #ff061b;
+    background-color: #0167D3;
 }
 
 .page-header-bar nav a {
     color: #FFFFFF;
+}
+
+.page-header-bar nav a:hover {
+    color: #ff061b;
 }
 
 .schedule>div:nth-of-type(odd) {
@@ -19,10 +23,10 @@
     background-color: #FFFFFF;
 }
 
-#page-footer {
-    background-color: #0167D3;
+.coconut,.vanilla,.lemon,.almond {
+    background-color: inherit;
 }
 
-.page-header-bar nav a:hover {
-    color: #0167D3;
+#page-footer {
+    background-color: #0167D3;
 }
