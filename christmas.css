@@ -1,0 +1,36 @@
+
+.page-header-bar {
+    background-color: #3D9136;
+}
+
+.page-header-bar nav a {
+    color: #FFFFFF;
+}
+
+.page-header-bar nav a:hover {
+    color: #B10000;
+}
+
+.schedule>div:nth-of-type(1),.schedule>div:nth-of-type(5) {
+    background-color: #B10000;
+}
+
+.schedule>div:nth-of-type(3),.schedule>div:nth-of-type(7) {
+    background-color: #3D9136;
+}
+
+.schedule>div:nth-of-type(even) {
+    background-color: #FFFFFF;
+}
+
+.schedule>div:nth-of-type(odd) p {
+    color: #ffffff;
+}
+
+.coconut,.vanilla,.lemon,.almond {
+    background-color: inherit;
+}
+
+#page-footer {
+    background-color: #3D9136;
+}

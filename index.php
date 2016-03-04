@@ -14,7 +14,13 @@
             $holidayStyleSheet = "4th-of-july.css";
             $logoImage['src'] = 'assets/images/logo-inverted.png';
             $sidebarImage['src'] = 'assets/images/macarons-4th-of-july.jpg';
-            $sidebarImage['alt'] = '';
+            $sidebarImage['alt'] = 'Red, white, and blue macarons';
+            break;
+        case "03/04":
+            $holidayStyleSheet = "christmas.css";
+            $logoImage['src'] = 'assets/images/logo-inverted.png';
+            $sidebarImage['src'] = 'assets/images/macarons-christmas.jpg';
+            $sidebarImage['alt'] = 'Macarons Christmas tree';
             break;
         default:
             break;
