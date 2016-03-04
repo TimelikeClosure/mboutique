@@ -1,11 +1,15 @@
 <?php
+    $holidayStyleSheet = false;
     $sidebarImage = [
         'src' => 'assets/images/macarons-image.png',
         'alt' => 'Vector graphic of macarons'
     ];
-    $holidayStyleSheet = false;
     $currentDate = date("m/d");
     switch ($currentDate) {
+        case "03/04":
+            $holidayStyleSheet = "4th-of-july.css";
+            $sidebarImage['src'] = 'assets/images/macarons-4th-of-july.jpg';
+            break;
         default:
             break;
     }

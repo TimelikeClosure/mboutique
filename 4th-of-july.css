@@ -1,0 +1,28 @@
+
+.page-header-bar {
+    background-color: #ff061b;
+}
+
+.page-header-bar nav a {
+    color: #FFFFFF;
+}
+
+.schedule>div:nth-of-type(odd) {
+    background-color: #ff061b;
+}
+
+.schedule>div:nth-of-type(odd) p {
+    color: #ffffff;
+}
+
+.schedule>div:nth-of-type(even) {
+    background-color: #FFFFFF;
+}
+
+#page-footer {
+    background-color: #0167D3;
+}
+
+.page-header-bar nav a:hover {
+    color: #0167D3;
+}
