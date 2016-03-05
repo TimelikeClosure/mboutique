@@ -16,7 +16,13 @@
             $sidebarImage['src'] = 'assets/images/macarons-4th-of-july.jpg';
             $sidebarImage['alt'] = 'Red, white, and blue macarons';
             break;
-        case "03/04":
+        case "10/31":
+            $holidayStyleSheet = "halloween.css";
+            $logoImage['src'] = 'assets/images/logo-inverted.png';
+            $sidebarImage['src'] = 'assets/images/macarons-halloween.jpg';
+            $sidebarImage['alt'] = 'Red, white, and blue macarons';
+            break;
+        case "12/25":
             $holidayStyleSheet = "christmas.css";
             $logoImage['src'] = 'assets/images/logo-inverted.png';
             $sidebarImage['src'] = 'assets/images/macarons-christmas.jpg';
