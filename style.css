@@ -321,6 +321,18 @@ main input,main textarea,main button {
     top: 0.5vw;
     height: 3vw;
 }
+.contact-social-media {
+    position: relative;
+    left: -4vw;
+}
+.contact-facebook {
+    position: relative;
+    left: 2vw;
+}
+.contact-twitter {
+    position: relative;
+    left: 4vw;
+}
 .copyright {
     position: relative;
     top: 2vw;
