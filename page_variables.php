@@ -1,19 +1,27 @@
 <?php
-    $holidayStyleSheet = false;
+    //  Begin page defaults
     $images = [];
     $images['logo'] = [
         'src' => 'assets/images/logo.png',
         'alt' => 'MBoutique logo'
     ];
-    switch($page) {
-        case 'welcome':
-            $images['jumbotron']['src'] = "assets/images/welcome-image.png";
-            $images['jumbotron']['alt'] = "Close-up of macarons";
-    }
     $images['sidebar'] = [
         'src' => 'assets/images/macarons-image.png',
         'alt' => 'Vector graphic of macarons'
     ];
+    //  End page defaults
+
+    //  Begin page specifics
+    switch($page) {
+        case 'welcome':
+            $title = "Welcome to MBoutique!";
+            $images['jumbotron']['src'] = "assets/images/welcome-image.png";
+            $images['jumbotron']['alt'] = "Close-up of macarons";
+    }
+    //  End page specifics
+
+    //  Begin holidays
+    $holidayStyleSheet = false;
     $currentDate = date("m/d");
     switch ($currentDate) {
         case "07/04":
@@ -37,4 +45,5 @@
         default:
             break;
     }
+    //  End holidays
 ?>

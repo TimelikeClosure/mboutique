@@ -1,29 +1,17 @@
 <?php
     $page = 'welcome';
+    require_once('page_variables.php');
 ?>
-<?php require('holiday.php'); ?>
 <!DOCTYPE html>
 
 <html>
 
-    <head>
-        <meta charset="utf-8" />
-        <title>Welcome to MBoutique!</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <link href="style.css" rel="stylesheet" type="text/css" />
-        <?php
-            if ($holidayStyleSheet) {
-                ?>
-                    <link href="<?=$holidayStyleSheet?>" rel="stylesheet" type="text/css" />
-                <?php
-            }
-        ?>
-    </head>
+    <?php require_once('html_head.php') ?>
 
     <body>
         <div class="container">
 
-            <?php include('page_header.php'); ?>
+            <?php include('body_header.php'); ?>
 
             <!--  Begin page main  -->
             <main id="page-main">
@@ -93,7 +81,7 @@
             </main>
             <!--  Close page main  -->
 
-            <?php include('page_footer.php'); ?>
+            <?php include('body_footer.php'); ?>
 
         </div>
     </body>

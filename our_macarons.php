@@ -1,4 +1,4 @@
-<?php require('holiday.php'); ?>
+<?php require('page_variables.php'); ?>
 <!DOCTYPE html>
 
 <html>
