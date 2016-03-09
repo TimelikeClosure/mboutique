@@ -17,6 +17,12 @@
             $title = "Welcome to MBoutique!";
             $images['jumbotron']['src'] = "assets/images/welcome-image.png";
             $images['jumbotron']['alt'] = "Close-up of macarons";
+            break;
+        case 'our_macarons':
+            $title = "Our macarons are freshly made by hand";
+            $images['jumbotron']['src'] = "assets/images/our-macarons-image.png";
+            $images['jumbotron']['alt'] = "Close-up of macarons";
+            break;
     }
     //  End page specifics
 
