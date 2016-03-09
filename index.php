@@ -1,37 +1,4 @@
-<?php
-    $holidayStyleSheet = false;
-    $logoImage = [
-        'src' => 'assets/images/logo.png',
-        'alt' => 'MBoutique logo'
-    ];
-    $sidebarImage = [
-        'src' => 'assets/images/macarons-image.png',
-        'alt' => 'Vector graphic of macarons'
-    ];
-    $currentDate = date("m/d");
-    switch ($currentDate) {
-        case "07/04":
-            $holidayStyleSheet = "4th-of-july.css";
-            $logoImage['src'] = 'assets/images/logo-inverted.png';
-            $sidebarImage['src'] = 'assets/images/macarons-4th-of-july.jpg';
-            $sidebarImage['alt'] = 'Red, white, and blue macarons';
-            break;
-        case "10/31":
-            $holidayStyleSheet = "halloween.css";
-            $logoImage['src'] = 'assets/images/logo-inverted.png';
-            $sidebarImage['src'] = 'assets/images/macarons-halloween.jpg';
-            $sidebarImage['alt'] = 'Red, white, and blue macarons';
-            break;
-        case "12/25":
-            $holidayStyleSheet = "christmas.css";
-            $logoImage['src'] = 'assets/images/logo-inverted.png';
-            $sidebarImage['src'] = 'assets/images/macarons-christmas.jpg';
-            $sidebarImage['alt'] = 'Macarons Christmas tree';
-            break;
-        default:
-            break;
-    }
-?>
+<?php require('holiday.php'); ?>
 <!--Add Your home page HTML here-->
 <!DOCTYPE html>
 
@@ -54,36 +21,7 @@
     <body>
         <div class="container">
 
-            <!--  Begin page header  -->
-            <header id="page-header">
-                <!--  Begin header bar  -->
-                <div class="page-header-bar" >
-                    <!--  Begin header logo  -->
-                    <div class="header-logo">
-                        <img src="<?="{$logoImage['src']}"?>" alt="<?="{$logoImage['alt']}"?>" />
-                    </div>
-                    <!--  Close header logo  -->
-
-                    <!--  Begin navigation bar  -->
-                    <nav>
-                        <ul>
-                            <li><a href="index.php">welcome</a></li>
-                            <li><a href="our_macarons.php">our macarons</a></li>
-                            <li><a href="gifts_parties.php">gifts &amp; parties</a></li>
-                            <li><a href="contact.php">contact</a></li>
-                        </ul>
-                    </nav>
-                    <!--  Close navigation bar  -->
-                </div>
-                <!--  Close header bar  -->
-
-                <!--  Begin jumbotron  -->
-                <div class="jumbotron">
-                    <img src="assets/images/welcome-image.png" alt="Close-up of macarons" />
-                </div>
-                <!--  Close jumbotron  -->
-            </header>
-            <!--  Close page header  -->
+            <?php include('page_header.php'); ?>
 
             <!--  Begin page main  -->
             <main id="page-main">
@@ -153,23 +91,7 @@
             </main>
             <!--  Close page main  -->
 
-            <!--  Begin page footer  -->
-            <footer id="page-footer">
-                <!--  Begin contacts  -->
-                <div class="contact">
-                    <div><div class="contact-mail">order@mboutique.com</div></div>
-                    <div><div class="contact-phone">949.800.3111</div></div>
-                    <div><div class="contact-social-media">Follow us
-                        <img class="contact-facebook" src="assets/images/facebook.png" />
-                        <img class="contact-twitter" src="assets/images/twitter.png" /></div></div>
-                </div>
-                <!--  Close contacts  -->
-
-                <!--  Copyright  -->
-                <div class="copyright">Copyright &copy;2014 MBoutique. All rights reserved.</div>
-
-            </footer>
-            <!--  Close page footer  -->
+            <?php include('page_footer.php'); ?>
 
         </div>
     </body>
