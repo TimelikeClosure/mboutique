@@ -1,5 +1,7 @@
+<?php
+    $page = 'welcome';
+?>
 <?php require('holiday.php'); ?>
-<!--Add Your home page HTML here-->
 <!DOCTYPE html>
 
 <html>
@@ -31,7 +33,7 @@
 
                     <!--  Begin first column image  -->
                     <div class="two-col col-left-25 flex-mobile-hidden">
-                        <img src="<?="{$sidebarImage['src']}"?>" alt="<?="{$sidebarImage['alt']}"?>" />
+                        <img src="<?="{$images['sidebar']['src']}"?>" alt="<?="{$images['sidebar']['alt']}"?>" />
                     </div>
                     <!--  Close first column image  -->
 
