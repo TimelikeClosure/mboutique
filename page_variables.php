@@ -28,6 +28,11 @@
             $images['jumbotron']['src'] = "assets/images/gifts-parties-image.png";
             $images['jumbotron']['alt'] = "Macarons in a gift basket";
             break;
+        case 'contact':
+            $title = "Welcome to MBoutique!";
+            $images['jumbotron']['src'] = "assets/images/contact-image.png";
+            $images['jumbotron']['alt'] = "Close-up of macarons";
+            break;
     }
     //  End page specifics
 

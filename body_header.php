@@ -4,7 +4,7 @@
     <div class="page-header-bar" >
         <!--  Begin header logo  -->
         <div class="header-logo">
-            <img src="<?="{$images['logo']['src']}"?>" alt="<?="{$logoImage['alt']}"?>" />
+            <img src="<?="{$images['logo']['src']}"?>" alt="<?="{$images['logo']['alt']}"?>" />
         </div>
         <!--  Close header logo  -->
 
