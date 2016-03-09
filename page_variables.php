@@ -23,6 +23,11 @@
             $images['jumbotron']['src'] = "assets/images/our-macarons-image.png";
             $images['jumbotron']['alt'] = "Close-up of macarons";
             break;
+        case 'gifts_parties':
+            $title = "Let's eat macarons!";
+            $images['jumbotron']['src'] = "assets/images/gifts-parties-image.png";
+            $images['jumbotron']['alt'] = "Macarons in a gift basket";
+            break;
     }
     //  End page specifics
 

@@ -1,48 +1,17 @@
-<?php require('page_variables.php'); ?>
+<?php
+    $page = 'gifts_parties';
+    require_once('page_variables.php');
+?>
 <!DOCTYPE html>
 
 <html>
 
-    <head>
-        <meta charset="utf-8" />
-        <title>Let's eat macarons!</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <link href="style.css" rel="stylesheet" type="text/css" />
-    </head>
+    <?php require_once('html_head.php') ?>
 
     <body>
         <div class="container">
 
-            <!--  Begin page header  -->
-            <header id="page-header">
-                <!--  Begin header bar  -->
-                <div class="page-header-bar" >
-                    <!--  Begin header logo  -->
-                    <div class="header-logo">
-                        <img src="assets/images/logo.png" />
-                    </div>
-                    <!--  Close header logo  -->
-
-                    <!--  Begin navigation bar  -->
-                    <nav>
-                        <ul>
-                            <li><a href="index.php">welcome</a></li>
-                            <li><a href="our_macarons.php">our macarons</a></li>
-                            <li><a href="gifts_parties.php">gifts &amp; parties</a></li>
-                            <li><a href="contact.php">contact</a></li>
-                        </ul>
-                    </nav>
-                    <!--  Close navigation bar  -->
-                </div>
-                <!--  Close header bar  -->
-
-                <!--  Begin jumbotron  -->
-                <div class="jumbotron">
-                    <img src="assets/images/gifts-parties-image.png" alt="Macarons in a gift basket" />
-                </div>
-                <!--  Close jumbotron  -->
-            </header>
-            <!--  Close page header  -->
+            <?php include('body_header.php'); ?>
 
             <!--  Begin page main  -->
             <main id="page-main" class="bkgrd-image bkgrd-gifts-parties">
@@ -73,23 +42,7 @@
             </main>
             <!--  Close page main  -->
 
-            <!--  Begin page footer  -->
-            <footer id="page-footer">
-                <!--  Begin contacts  -->
-                <div class="contact">
-                    <div><div class="contact-mail">order@mboutique.com</div></div>
-                    <div><div class="contact-phone">949.800.3111</div></div>
-                    <div><div class="contact-social-media">Follow us
-                        <img class="contact-facebook" src="assets/images/facebook.png" />
-                        <img class="contact-twitter" src="assets/images/twitter.png" /></div></div>
-                </div>
-                <!--  Close contacts  -->
-
-                <!--  Copyright  -->
-                <div class="copyright">Copyright &copy;2014 MBoutique. All rights reserved.</div>
-
-            </footer>
-            <!--  Close page footer  -->
+            <?php include('body_footer.php'); ?>
 
         </div>
     </body>
