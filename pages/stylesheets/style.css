@@ -294,13 +294,13 @@ main input,main textarea,main button {
     justify-content: center;
 }
 .contact-mail {
-    background-image: url("assets/images/mail.png");
+    background-image: url("../../assets/images/mail.png");
     background-repeat: no-repeat;
     background-size: contain;
     text-indent: 6vw;
 }
 .contact-phone {
-    background-image: url("assets/images/phone.png");
+    background-image: url("../../assets/images/phone.png");
     background-repeat: no-repeat;
     background-size: contain;
     text-indent: 6vw;
@@ -407,8 +407,8 @@ main input,main textarea,main button {
         width: 100vw;
         max-width: 1000px;
     }
-    .bkgrd-our-macarons {background-image: url("assets/images/our-macarons-background.png");}
-    .bkgrd-gifts-parties {background-image: url("assets/images/gifts-parties-background.png");}
+    .bkgrd-our-macarons {background-image: url("../../assets/images/our-macarons-background.png");}
+    .bkgrd-gifts-parties {background-image: url("../../assets/images/gifts-parties-background.png");}
 
     /*  Flexbox column layout styling  */
     .flex-container {

@@ -4,16 +4,16 @@
     $pageData['links'] = [
         'welcome'=>[
             'name'=>'welcome',
-            'url'=>'welcome.php'
+            'url'=>'pages/welcome.php'
         ], 'our_macarons'=>[
             'name'=>'our macarons',
-            'url'=>'our_macarons.php'
+            'url'=>'pages/our_macarons.php'
         ], 'gifts_parties'=>[
             'name'=>'gifts &amp; parties',
-            'url'=>'gifts_parties.php'
+            'url'=>'pages/gifts_parties.php'
         ], 'contact'=>[
             'name'=>'contact',
-            'url'=>'contact.php'
+            'url'=>'pages/contact.php'
         ]
     ];
     $pageData['images']['logo'] = [
@@ -66,19 +66,19 @@
     $currentDate = date("m/d");
     switch ($currentDate) {
         case "07/04":
-            $pageData['holidayStyleSheet'] = "4th-of-july.css";
+            $pageData['holidayStyleSheet'] = "pages/stylesheets/4th-of-july.css";
             $pageData['images']['logo']['src'] = 'assets/images/logo-inverted.png';
             $pageData['images']['sidebar']['src'] = 'assets/images/macarons-4th-of-july.jpg';
             $pageData['images']['sidebar']['alt'] = 'Red, white, and blue macarons';
             break;
         case "10/31":
-            $pageData['holidayStyleSheet'] = "halloween.css";
+            $pageData['holidayStyleSheet'] = "pages/stylesheets/halloween.css";
             $pageData['images']['logo']['src'] = 'assets/images/logo-inverted.png';
             $pageData['images']['sidebar']['src'] = 'assets/images/macarons-halloween.jpg';
             $pageData['images']['sidebar']['alt'] = 'Red, white, and blue macarons';
             break;
         case "12/25":
-            $pageData['holidayStyleSheet'] = "christmas.css";
+            $pageData['holidayStyleSheet'] = "pages/stylesheets/christmas.css";
             $pageData['images']['logo']['src'] = 'assets/images/logo-inverted.png';
             $pageData['images']['sidebar']['src'] = 'assets/images/macarons-christmas.jpg';
             $pageData['images']['sidebar']['alt'] = 'Macarons Christmas tree';

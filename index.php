@@ -1,14 +1,14 @@
-<?php require_once('page_variables.php'); ?>
+<?php require_once('pages/components/page_variables.php'); ?>
 <!DOCTYPE html>
 
 <html>
 
-    <?php require_once('html_head.php') ?>
+    <?php require_once('pages/components/html_head.php') ?>
 
     <body>
         <div class="container">
 
-            <?php include('body_header.php'); ?>
+            <?php include('pages/components/body_header.php'); ?>
 
             <?php
                 if (!array_key_exists($pageData['page'], $pageData['links'])) {
@@ -18,7 +18,7 @@
                 }
             ?>
 
-            <?php include('body_footer.php'); ?>
+            <?php include('pages/components/body_footer.php'); ?>
 
         </div>
     </body>
