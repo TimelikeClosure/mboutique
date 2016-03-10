@@ -11,10 +11,13 @@
         <!--  Begin navigation bar  -->
         <nav>
             <ul>
-                <li><a href="index.php">welcome</a></li>
-                <li><a href="our_macarons.php">our macarons</a></li>
-                <li><a href="gifts_parties.php">gifts &amp; parties</a></li>
-                <li><a href="contact.php">contact</a></li>
+                <?php
+                    foreach($pageData['links'] as $menu_key => $menu_item){
+                        ?>
+                            <li><a href="index.php?page=<?=$menu_key?>"><?=$menu_item['name']?></a></li>
+                        <?php
+                    }
+                ?>
             </ul>
         </nav>
         <!--  Close navigation bar  -->

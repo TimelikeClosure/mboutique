@@ -1,11 +1,4 @@
-<?php
-    if (empty($_GET['page'])) {
-        $pageData['page'] = 'welcome';
-    } else {
-        $pageData['page'] = $_GET['page'];
-    }
-    require_once('page_variables.php');
-?>
+<?php require_once('page_variables.php'); ?>
 <!DOCTYPE html>
 
 <html>

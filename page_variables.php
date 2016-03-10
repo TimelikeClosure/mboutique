@@ -1,11 +1,20 @@
 <?php
-    //  Begin page defaults
 
+    //  Begin page defaults
     $pageData['links'] = [
-        'welcome'=>['url'=>'welcome.php'],
-        'our_macarons'=>['url'=>'our_macarons.php'],
-        'gifts_parties'=>['url'=>'gifts_parties.php'],
-        'contact'=>['url'=>'contact.php']
+        'welcome'=>[
+            'name'=>'welcome',
+            'url'=>'welcome.php'
+        ], 'our_macarons'=>[
+            'name'=>'our macarons',
+            'url'=>'our_macarons.php'
+        ], 'gifts_parties'=>[
+            'name'=>'gifts &amp; parties',
+            'url'=>'gifts_parties.php'
+        ], 'contact'=>[
+            'name'=>'contact',
+            'url'=>'contact.php'
+        ]
     ];
     $pageData['images']['logo'] = [
         'src' => 'assets/images/logo.png',
@@ -18,6 +27,11 @@
     //  End page defaults
 
     //  Begin page specifics
+    if (empty($_GET['page'])) {
+        $pageData['page'] = 'welcome';
+    } else {
+        $pageData['page'] = $_GET['page'];
+    }
     switch($pageData['page']) {
         case 'welcome':
             $pageData['title'] = "Welcome to MBoutique!";
