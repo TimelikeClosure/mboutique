@@ -1,6 +1,12 @@
 <?php
     //  Begin page defaults
-    $pageData['images'] = [];
+
+    $pageData['links'] = [
+        'welcome'=>['url'=>'welcome.php'],
+        'our_macarons'=>['url'=>'our_macarons.php'],
+        'gifts_parties'=>['url'=>'gifts_parties.php'],
+        'contact'=>['url'=>'contact.php']
+    ];
     $pageData['images']['logo'] = [
         'src' => 'assets/images/logo.png',
         'alt' => 'MBoutique logo'
@@ -32,6 +38,11 @@
             $pageData['title'] = "Visit us!";
             $pageData['images']['jumbotron']['src'] = "assets/images/contact-image.png";
             $pageData['images']['jumbotron']['alt'] = "Close-up of macarons";
+            break;
+        default:
+            $pageData['title'] = "Page not found";
+            $pageData['images']['jumbotron']['src'] = "";
+            $pageData['images']['jumbotron']['alt'] = "";
             break;
     }
     //  End page specifics
