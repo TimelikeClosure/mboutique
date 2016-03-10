@@ -1,5 +1,5 @@
 <?php
-    $page = 'welcome';
+    $pageData['page'] = 'welcome';
     require_once('page_variables.php');
 ?>
 <!DOCTYPE html>
@@ -21,7 +21,7 @@
 
                     <!--  Begin first column image  -->
                     <div class="two-col col-left-25 flex-mobile-hidden">
-                        <img src="<?="{$images['sidebar']['src']}"?>" alt="<?="{$images['sidebar']['alt']}"?>" />
+                        <img src="<?="{$pageData['images']['sidebar']['src']}"?>" alt="<?="{$pageData['images']['sidebar']['alt']}"?>" />
                     </div>
                     <!--  Close first column image  -->
 

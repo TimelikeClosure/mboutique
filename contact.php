@@ -1,5 +1,5 @@
 <?php
-    $page = 'contact';
+    $pageData['page'] = 'contact';
     require_once('page_variables.php');
 ?>
 <!DOCTYPE html>

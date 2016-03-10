@@ -1,5 +1,5 @@
 <?php
-    $page = 'gifts_parties';
+    $pageData['page'] = 'gifts_parties';
     require_once('page_variables.php');
 ?>
 <!DOCTYPE html>

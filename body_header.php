@@ -4,7 +4,7 @@
     <div class="page-header-bar" >
         <!--  Begin header logo  -->
         <div class="header-logo">
-            <img src="<?="{$images['logo']['src']}"?>" alt="<?="{$images['logo']['alt']}"?>" />
+            <img src="<?="{$pageData['images']['logo']['src']}"?>" alt="<?="{$pageData['images']['logo']['alt']}"?>" />
         </div>
         <!--  Close header logo  -->
 
@@ -23,7 +23,7 @@
 
     <!--  Begin jumbotron  -->
     <div class="jumbotron">
-        <img src="<?=$images['jumbotron']['src']?>" alt="<?=$images['jumbotron']['alt']?>" />
+        <img src="<?=$pageData['images']['jumbotron']['src']?>" alt="<?=$pageData['images']['jumbotron']['alt']?>" />
     </div>
     <!--  Close jumbotron  -->
 </header>

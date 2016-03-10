@@ -1,5 +1,5 @@
 <?php
-    $page = 'our_macarons';
+    $pageData['page'] = 'our_macarons';
     require_once('page_variables.php');
 ?>
 <!DOCTYPE html>
