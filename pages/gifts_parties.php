@@ -1,4 +1,9 @@
-<!--  Begin page main  -->
+<?php
+    if (empty($INTERNAL_LOAD) || $INTERNAL_LOAD === false) {
+        echo "Page cannot be loaded directly";
+        exit();
+    }
+?><!--  Begin page main  -->
 <main id="page-main" class="bkgrd-image bkgrd-gifts-parties">
     <div class="flex-container">
         <!--  Begin one column article  -->

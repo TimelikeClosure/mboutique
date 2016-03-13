@@ -1,4 +1,9 @@
 <?php
+    if (empty($INTERNAL_LOAD) || $INTERNAL_LOAD === false) {
+        echo "Page cannot be loaded directly";
+        exit();
+    }
+?><?php
 
     //  Begin page defaults
     $pageData['links'] = [

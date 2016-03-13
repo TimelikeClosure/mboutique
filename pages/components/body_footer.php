@@ -1,4 +1,9 @@
-<!--  Begin page footer  -->
+<?php
+    if (empty($INTERNAL_LOAD) || $INTERNAL_LOAD === false) {
+        echo "Page cannot be loaded directly";
+        exit();
+    }
+?><!--  Begin page footer  -->
 <footer id="page-footer">
     <!--  Begin contacts  -->
     <div class="contact">

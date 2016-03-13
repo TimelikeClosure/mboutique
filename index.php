@@ -1,4 +1,7 @@
-<?php require_once('pages/components/page_variables.php'); ?>
+<?php
+    $INTERNAL_LOAD = true;
+    require_once('pages/components/page_variables.php');
+?>
 <!DOCTYPE html>
 
 <html>

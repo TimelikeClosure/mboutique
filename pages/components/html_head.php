@@ -1,4 +1,9 @@
-<head>
+<?php
+    if (empty($INTERNAL_LOAD) || $INTERNAL_LOAD === false) {
+        echo "Page cannot be loaded directly";
+        exit();
+    }
+?><head>
     <meta charset="utf-8" />
     <title><?=$pageData['title']?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">

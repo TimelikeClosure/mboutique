@@ -1,4 +1,9 @@
-<!--  Begin page header  -->
+<?php
+    if (empty($INTERNAL_LOAD) || $INTERNAL_LOAD === false) {
+        echo "Page cannot be loaded directly";
+        exit();
+    }
+?><!--  Begin page header  -->
 <header id="page-header">
     <!--  Begin header bar  -->
     <div class="page-header-bar" >
