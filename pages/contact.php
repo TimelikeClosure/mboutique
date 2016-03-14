@@ -44,7 +44,7 @@
         <!--  Close second column form  -->
 
         <!--  Begin third column image  -->
-        <div class="flex-item-2 flex-mobile-hidden">
+        <div id="sidebar" class="flex-item-2 flex-mobile-hidden">
             <img
                 src="<?=
                     empty($pageData['holiday']['images']['sidebar']['src']) ? $pageData['links'][$pageData['page']]['images']['sidebar']['src']

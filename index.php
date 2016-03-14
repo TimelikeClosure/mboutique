@@ -1,6 +1,10 @@
 <?php
     $INTERNAL_LOAD = true;
     require_once('pages/components/page_variables.php');
+    if (!empty($_GET['mode']) && $_GET['mode'] == 'content') {
+        include("pages/{$pageData['page']}.php");
+        exit();
+    }
 ?>
 <!DOCTYPE html>
 

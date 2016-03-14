@@ -11,7 +11,7 @@
     <div class="two-col-container">
 
         <!--  Begin first column image  -->
-        <div class="two-col col-left-25 flex-mobile-hidden">
+        <div id="sidebar" class="two-col col-left-25 flex-mobile-hidden">
             <img
                 src="<?=
                     empty($pageData['holiday']['images']['sidebar']['src']) ? $pageData['links'][$pageData['page']]['images']['sidebar']['src']

@@ -9,7 +9,7 @@
     <!--  Begin header bar  -->
     <div class="page-header-bar" >
         <!--  Begin header logo  -->
-        <div class="header-logo">
+        <div id="logo" class="header-logo">
             <img
                 src="<?=
                     empty($pageData['holiday']['images']['logo']['src']) ? $pageData['links'][$pageData['page']]['images']['logo']['src']
@@ -27,7 +27,7 @@
                     foreach($pageData['links'] as $menu_key => $menu_item){
                         if ($menu_key != 'error') {
                             ?>
-                                <li><a href="index.php?page=<?=$menu_key?>"><?=$menu_item['name']?></a></li>
+                                <li><a href="index.php?page=<?=$menu_key?>" onclick="pageLoad('<?=$menu_key?>'); return false;"><?=$menu_item['name']?></a></li>
                             <?php
                         }
                     }
@@ -39,7 +39,7 @@
     <!--  Close header bar  -->
 
     <!--  Begin jumbotron  -->
-    <div class="jumbotron">
+    <div id="jumbotron" class="jumbotron">
         <img src="<?=$pageData['links'][$pageData['page']]['images']['jumbotron']['src']?>" alt="<?=$pageData['links'][$pageData['page']]['images']['jumbotron']['alt']?>" />
     </div>
     <!--  Close jumbotron  -->
