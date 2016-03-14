@@ -1,5 +1,5 @@
 <?php
-    if (empty($INTERNAL_LOAD) || $INTERNAL_LOAD === false) {
+    if (empty($INTERNAL_LOAD) || $INTERNAL_LOAD === false) { // Throw a 403 error if page is loaded directly
         http_response_code(403);
         echo "403 Bad Request";
         exit();

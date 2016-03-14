@@ -1,5 +1,5 @@
 <?php
-    if (empty($INTERNAL_LOAD) || $INTERNAL_LOAD === false) {
+    if (empty($INTERNAL_LOAD) || $INTERNAL_LOAD === false) { // Throw a 403 error if page is loaded directly
         http_response_code(403);
         echo "403 Bad Request";
         exit();
@@ -13,7 +13,7 @@
         <!--  Begin first column image  -->
         <div id="sidebar" class="two-col col-left-25 flex-mobile-hidden">
             <img
-                src="<?=
+                src="<?= // Use holiday image if it exists, otherwise use page image
                     empty($pageData['holiday']['images']['sidebar']['src']) ? $pageData['links'][$pageData['page']]['images']['sidebar']['src']
                                                                             : $pageData['holiday']['images']['sidebar']['src']
                 ?>"

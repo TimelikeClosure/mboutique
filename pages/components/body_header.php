@@ -1,5 +1,5 @@
 <?php
-    if (empty($INTERNAL_LOAD) || $INTERNAL_LOAD === false) {
+    if (empty($INTERNAL_LOAD) || $INTERNAL_LOAD === false) { // Throw a 403 error if page is loaded directly
         http_response_code(403);
         echo "403 Bad Request";
         exit();
@@ -11,7 +11,7 @@
         <!--  Begin header logo  -->
         <div id="logo" class="header-logo">
             <img
-                src="<?=
+                src="<?= // Use holiday image if it exists, otherwise use page image
                     empty($pageData['holiday']['images']['logo']['src']) ? $pageData['links'][$pageData['page']]['images']['logo']['src']
                                                                          : $pageData['holiday']['images']['logo']['src']
                 ?>"
@@ -24,7 +24,7 @@
         <nav>
             <ul>
                 <?php
-                    foreach($pageData['links'] as $menu_key => $menu_item){
+                    foreach($pageData['links'] as $menu_key => $menu_item){ // Generate nav menu with links to all pages except error page
                         if ($menu_key != 'error') {
                             ?>
                                 <li><a href="index.php?page=<?=$menu_key?>" onclick="pageLoad('<?=$menu_key?>', true); return false;"><?=$menu_item['name']?></a></li>

@@ -1,5 +1,5 @@
 <?php
-    if (empty($INTERNAL_LOAD) || $INTERNAL_LOAD === false) {
+    if (empty($INTERNAL_LOAD) || $INTERNAL_LOAD === false) { // Throw a 403 error if page is loaded directly
         http_response_code(403);
         echo "403 Bad Request";
         exit();
@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link href="pages/stylesheets/style.css" rel="stylesheet" type="text/css" />
     <?php
-        if (!empty($pageData['holiday']['stylesheet'])) {
+        if (!empty($pageData['holiday']['stylesheet'])) { // Load special holiday stylesheet if it exists
             ?>
                 <link href="<?=$pageData['holiday']['stylesheet']?>" rel="stylesheet" type="text/css" />
             <?php
@@ -18,7 +18,7 @@
     ?>
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <script>
-        var pageData = <?=json_encode($pageData);?>;
+        var pageData = <?=json_encode($pageData);?>; // Insert PHP pageData into JavaScript
         var oldContent = null;
 
         /**
