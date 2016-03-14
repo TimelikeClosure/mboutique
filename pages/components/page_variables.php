@@ -10,7 +10,6 @@
     $pageData['links'] = [
         'welcome'=>[
             'name'=>'welcome',
-            'url'=>'pages/welcome.php',
             'title'=>"Welcome to MBoutique!",
             'images'=>[
                 'jumbotron'=>[
@@ -20,7 +19,6 @@
             ]
         ], 'our_macarons'=>[
             'name'=>'our macarons',
-            'url'=>'pages/our_macarons.php',
             'title'=>"Our macarons are freshly made by hand",
             'images'=>[
                 'jumbotron'=>[
@@ -30,7 +28,6 @@
             ]
         ], 'gifts_parties'=>[
             'name'=>'gifts &amp; parties',
-            'url'=>'pages/gifts_parties.php',
             'title'=>"Let's eat macarons!",
             'images'=>[
                 'jumbotron'=>[
@@ -40,7 +37,6 @@
             ]
         ], 'contact'=>[
             'name'=>'contact',
-            'url'=>'pages/contact.php',
             'title'=>"Visit us!",
             'images'=>[
                 'jumbotron'=>[
@@ -50,7 +46,6 @@
             ]
         ], 'error'=>[
             'name'=>'error',
-            'url'=>'pages/components/error.php',
             'title'=>"Page not found",
             'images'=>[
                 'jumbotron'=>[

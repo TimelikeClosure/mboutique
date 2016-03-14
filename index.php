@@ -16,7 +16,7 @@
             <!--  Begin page content  -->
             <div id="content">
                 <?php
-                    include($pageData['links'][$pageData['page']]['url']);
+                    include("pages/{$pageData['page']}.php");
                 ?>
             </div>
             <!--  Close page content  -->
