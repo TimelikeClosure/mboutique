@@ -97,9 +97,12 @@
                 var page;
                 if (event.state === null || event.state.page === null) {
                     var getString = location.search;
-                    var pageQuery = getString.indexOf('page=');
+                    var pageQuery = getString.indexOf('?page=');
+                    if (pageQuery == -1) {
+                        pageQuery = getString.indexOf('&page=');
+                    }
                     if (pageQuery > -1){
-                        getString = getString.substr(pageQuery + 5);
+                        getString = getString.substr(pageQuery + 6);
                         page = getString.split('&')[0];
                         if (page.length == 0) {
                             page = "welcome";
