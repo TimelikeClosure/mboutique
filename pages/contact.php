@@ -45,7 +45,16 @@
 
         <!--  Begin third column image  -->
         <div class="flex-item-2 flex-mobile-hidden">
-            <img src="assets/images/macarons-image.png" alt="Vector graphic of macarons" />
+            <img
+                src="<?=
+                    empty($pageData['holiday']['images']['sidebar']['src']) ? $pageData['links'][$pageData['page']]['images']['sidebar']['src']
+                                                                            : $pageData['holiday']['images']['sidebar']['src']
+                ?>"
+                alt="<?=
+                    empty($pageData['holiday']['images']['sidebar']['alt']) ? $pageData['links'][$pageData['page']]['images']['sidebar']['alt']
+                                                                            : $pageData['holiday']['images']['sidebar']['alt']
+                ?>"
+            />
         </div>
         <!--  Close third column image  -->
 

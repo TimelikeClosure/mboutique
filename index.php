@@ -13,14 +13,13 @@
 
             <?php include('pages/components/body_header.php'); ?>
 
-            <?php
-                if (!array_key_exists($pageData['page'], $pageData['links'])) {
-                    http_response_code(404);
-                    include('pages/components/error.php');
-                } else {
+            <!--  Begin page content  -->
+            <div id="content">
+                <?php
                     include($pageData['links'][$pageData['page']]['url']);
-                }
-            ?>
+                ?>
+            </div>
+            <!--  Close page content  -->
 
             <?php include('pages/components/body_footer.php'); ?>
 

@@ -6,14 +6,17 @@
     }
 ?><head>
     <meta charset="utf-8" />
-    <title><?=$pageData['title']?></title>
+    <title><?=$pageData['links'][$pageData['page']]['title']?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link href="pages/stylesheets/style.css" rel="stylesheet" type="text/css" />
     <?php
-        if ($pageData['holidayStyleSheet']) {
+        if (!empty($pageData['holiday']['stylesheet'])) {
             ?>
-            <link href="<?=$pageData['holidayStyleSheet']?>" rel="stylesheet" type="text/css" />
+                <link href="<?=$pageData['holiday']['stylesheet']?>" rel="stylesheet" type="text/css" />
             <?php
         }
     ?>
+    <script>
+        var pageData = <?=json_encode($pageData);?>;
+    </script>
 </head>

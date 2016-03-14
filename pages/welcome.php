@@ -12,7 +12,16 @@
 
         <!--  Begin first column image  -->
         <div class="two-col col-left-25 flex-mobile-hidden">
-            <img src="<?="{$pageData['images']['sidebar']['src']}"?>" alt="<?="{$pageData['images']['sidebar']['alt']}"?>" />
+            <img
+                src="<?=
+                    empty($pageData['holiday']['images']['sidebar']['src']) ? $pageData['links'][$pageData['page']]['images']['sidebar']['src']
+                                                                            : $pageData['holiday']['images']['sidebar']['src']
+                ?>"
+                alt="<?=
+                    empty($pageData['holiday']['images']['sidebar']['alt']) ? $pageData['links'][$pageData['page']]['images']['sidebar']['alt']
+                                                                            : $pageData['holiday']['images']['sidebar']['alt']
+                ?>"
+            />
         </div>
         <!--  Close first column image  -->
 

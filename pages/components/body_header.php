@@ -10,7 +10,13 @@
     <div class="page-header-bar" >
         <!--  Begin header logo  -->
         <div class="header-logo">
-            <img src="<?="{$pageData['images']['logo']['src']}"?>" alt="<?="{$pageData['images']['logo']['alt']}"?>" />
+            <img
+                src="<?=
+                    empty($pageData['holiday']['images']['logo']['src']) ? $pageData['links'][$pageData['page']]['images']['logo']['src']
+                                                                         : $pageData['holiday']['images']['logo']['src']
+                ?>"
+                alt="<?=$pageData['links'][$pageData['page']]['images']['logo']['alt']?>"
+            />
         </div>
         <!--  Close header logo  -->
 
@@ -19,9 +25,11 @@
             <ul>
                 <?php
                     foreach($pageData['links'] as $menu_key => $menu_item){
-                        ?>
-                            <li><a href="index.php?page=<?=$menu_key?>"><?=$menu_item['name']?></a></li>
-                        <?php
+                        if ($menu_key != 'error') {
+                            ?>
+                                <li><a href="index.php?page=<?=$menu_key?>"><?=$menu_item['name']?></a></li>
+                            <?php
+                        }
                     }
                 ?>
             </ul>
@@ -32,7 +40,7 @@
 
     <!--  Begin jumbotron  -->
     <div class="jumbotron">
-        <img src="<?=$pageData['images']['jumbotron']['src']?>" alt="<?=$pageData['images']['jumbotron']['alt']?>" />
+        <img src="<?=$pageData['links'][$pageData['page']]['images']['jumbotron']['src']?>" alt="<?=$pageData['links'][$pageData['page']]['images']['jumbotron']['alt']?>" />
     </div>
     <!--  Close jumbotron  -->
 </header>
