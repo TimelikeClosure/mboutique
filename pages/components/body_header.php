@@ -27,7 +27,7 @@
                     foreach($pageData['links'] as $menu_key => $menu_item){
                         if ($menu_key != 'error') {
                             ?>
-                                <li><a href="index.php?page=<?=$menu_key?>" onclick="pageLoad('<?=$menu_key?>'); return false;"><?=$menu_item['name']?></a></li>
+                                <li><a href="index.php?page=<?=$menu_key?>" onclick="pageLoad('<?=$menu_key?>', true); return false;"><?=$menu_item['name']?></a></li>
                             <?php
                         }
                     }

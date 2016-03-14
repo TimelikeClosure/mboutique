@@ -21,7 +21,7 @@
         var pageData = <?=json_encode($pageData);?>;
         var oldContent = null;
 
-        function pageLoad(page) {
+        function pageLoad(page, addHistory) {
             var content = $('#content');
             oldContent = content.html();
             content.html("<h1>Loading page...</h1>");
@@ -36,22 +36,26 @@
                 },
                 timeout: 10000,
                 success: function(response) {
-                    if (location.pathname.indexOf("index.php") >= 0) {
-                        history.pushState({}, "", "?page=" + page);
-                    } else {
-                        history.pushState({}, "", "index.php?page=" + page);
+                    if (addHistory) {
+                        if (location.pathname.indexOf("index.php") >= 0) {
+                            history.pushState({page: page}, pageData.links[page].title, "?page=" + page);
+                        } else {
+                            history.pushState({page: page}, pageData.links[page].title, "index.php?page=" + page);
+                        }
                     }
                     document.title = pageData.links[page].title;
                     $('#content').html(response);
                     updateImages(page);
                 },
                 error: function(response) {
-                    console.log(response);
+                    //console.log(response);
                     if (response.hasOwnProperty("responseText") && pageData.links.hasOwnProperty(page)) {
-                        if (location.pathname.indexOf("index.php") >= 0) {
-                            history.pushState({}, "", "?page=" + page);
-                        } else {
-                            history.pushState({}, "", "index.php?page=" + page);
+                        if (addHistory) {
+                            if (location.pathname.indexOf("index.php") >= 0) {
+                                history.pushState({page: page}, pageData.links[page].title, "?page=" + page);
+                            } else {
+                                history.pushState({page: page}, pageData.links[page].title, "index.php?page=" + page);
+                            }
                         }
                         document.title = pageData.links[page].title;
                         $('#content').html(response.responseText);
@@ -74,5 +78,28 @@
                     }
                 }
         }
+
+        $(document).ready(function(){
+            window.onpopstate = function(event) {
+                //console.log("onpopstate: ", event.state.page);
+                var page;
+                if (event.state === null || event.state.page === null) {
+                    var getString = location.search;
+                    var pageQuery = getString.indexOf('page=');
+                    if (pageQuery > -1){
+                        getString = getString.substr(pageQuery + 5);
+                        page = getString.split('&')[0];
+                        if (page.length == 0) {
+                            page = "welcome";
+                        }
+                    } else {
+                        page = "welcome";
+                    }
+                } else {
+                    page = event.state.page;
+                }
+                pageLoad(page, false);
+            }
+        });
     </script>
 </head>
