@@ -21,6 +21,11 @@
         var pageData = <?=json_encode($pageData);?>;
         var oldContent = null;
 
+        /**
+         * pageLoad - Attempts to load in the content for the given page. If no page can be loaded, reverts to old page.
+         * @param {string} page - determines which page to attempt to load.
+         * @param {boolean} addHistory - determines whether a new browser history page is created.
+         */
         function pageLoad(page, addHistory) {
             var content = $('#content');
             oldContent = content.html();
@@ -36,30 +41,11 @@
                 },
                 timeout: 10000,
                 success: function(response) {
-                    if (addHistory) {
-                        if (location.pathname.indexOf("index.php") >= 0) {
-                            history.pushState({page: page}, pageData.links[page].title, "?page=" + page);
-                        } else {
-                            history.pushState({page: page}, pageData.links[page].title, "index.php?page=" + page);
-                        }
-                    }
-                    document.title = pageData.links[page].title;
-                    $('#content').html(response);
-                    updateImages(page);
+                    updateContent(page, response, addHistory);
                 },
                 error: function(response) {
-                    //console.log(response);
                     if (response.hasOwnProperty("responseText") && pageData.links.hasOwnProperty(page)) {
-                        if (addHistory) {
-                            if (location.pathname.indexOf("index.php") >= 0) {
-                                history.pushState({page: page}, pageData.links[page].title, "?page=" + page);
-                            } else {
-                                history.pushState({page: page}, pageData.links[page].title, "index.php?page=" + page);
-                            }
-                        }
-                        document.title = pageData.links[page].title;
-                        $('#content').html(response.responseText);
-                        updateImages(page);
+                        updateContent(page, response.responseText, addHistory);
                     } else {
                         $('#content').html(oldContent);
                     }
@@ -67,6 +53,29 @@
             });
         }
 
+        /**
+         * updateContent - Updates the page with the given HTML. Optionally adds a new page to browser history.
+         * @param {string} page - determines which page to load.
+         * @param {string} content - used to fill main content section of page.
+         * @param {boolean} addHistoryPage - Adds a new page to browser history if true.
+         */
+        function updateContent(page, content, addHistoryPage) {
+            if (addHistoryPage) {
+                if (location.pathname.indexOf("index.php") >= 0) {
+                    history.pushState({page: page}, pageData.links[page].title, "?page=" + page);
+                } else {
+                    history.pushState({page: page}, pageData.links[page].title, "index.php?page=" + page);
+                }
+            }
+            document.title = pageData.links[page].title;
+            $('#content').html(content);
+            updateImages(page);
+        }
+
+        /**
+         * updateImages - Updates images on page not included in main content section.
+         * @param {string} page - determines which page images to use.
+         */
         function updateImages(page) {
                 for (var image in pageData.links[page].images) {
                     var imageElement = $('#' + image + ' img');
@@ -80,8 +89,11 @@
         }
 
         $(document).ready(function(){
+            /**
+             * window.onpopstate - Updates page content when browser navigation buttons are used.
+             * @param event
+             */
             window.onpopstate = function(event) {
-                //console.log("onpopstate: ", event.state.page);
                 var page;
                 if (event.state === null || event.state.page === null) {
                     var getString = location.search;
