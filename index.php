@@ -14,18 +14,23 @@
 
     <body>
         <div class="container">
-
-            <?php include('pages/components/body_header.php'); ?>
+            <!--  Begin page header  -->
+            <header id="page-header">
+                <?php include('pages/components/body_header.php'); ?>
+            </header>
+            <!--  Close page header  -->
 
             <!--  Begin page content  -->
             <div id="content">
-                <?php
-                    include("pages/{$pageData['page']}.php");
-                ?>
+                <?php include("pages/{$pageData['page']}.php"); ?>
             </div>
             <!--  Close page content  -->
 
-            <?php include('pages/components/body_footer.php'); ?>
+            <!--  Begin page footer  -->
+            <footer id="page-footer">
+                <?php include('pages/components/body_footer.php'); ?>
+            </footer>
+            <!--  Close page footer  -->
 
         </div>
     </body>

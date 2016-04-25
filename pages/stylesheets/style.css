@@ -1,22 +1,3 @@
-/*
-    Pages index.html, gifts_parties.html to be converted to responsive flexbox layout --visual, large
-*/
-/*  Notes of things to do:
-    Resize fonts in rem, with font-size % on <html>.  --refactor, large
-    Make inner main list on gifts_parties.html take up full screen width.  --visual,
-    Re-design schedule on mobile.  Possible ideas:  --visual, large
-        Vertically stacked.
-        Accordion.
-    Look at necessity <p> tags, particularly those in .schedule divs.  --refactor
-    Remove old inline-block solution.  --refactor, small
-    Change .schedule to .schedule-container.  --refactor, small
-    Move fixed unit max-width and max-height to (max-width > 1000px) media query.  --refactor, medium
-    Re-allocate vw and % units, where appropriate.  --refactor, medium, possible overlap / conflict with rem change
-    Recheck necessity of all * selectors.  --refactor
-    Check adding additional purpose classes inside .flex-* classes  --refactor
-    Remove relative positioning inside footer (perhaps turning .social-media into its own flexbox).  --refactor
-    Fix all the spelling errors from the instructions?  --visual
-*/
 
 /*  Base body layout styling  */
 body {
