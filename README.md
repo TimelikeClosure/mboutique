@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project was originally made to practice matching desktop and mobile design documents using HTML and CSS. It was later expanded to include PHP templating
+This project was originally made to practice matching desktop and mobile design documents using HTML and CSS. It was later expanded to include PHP templating and dynamic content loading.
 
 Link to [live version](http://mboutique.timhoristjr.com).
 
