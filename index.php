@@ -20,19 +20,19 @@
     <body>
         <div class="container">
             <!-- Begin Page Header section -->
-            <header id="page-header" class="full-border-box">
+            <header id="page-header" class="page-header full-border-box">
                 <?php include('pages/components/body_header.php'); ?>
             </header>
             <!-- End Page Header section -->
 
             <!-- Begin Page Main section -->
-            <main id="page-main" class="full-border-box">
+            <main id="page-main" class="page-main full-border-box">
                 <?php include("pages/{$pageData['page']}.php"); ?>
             </main>
             <!-- End Page Main section -->
 
             <!-- Begin Page Footer section -->
-            <footer id="page-footer" class="full-border-box">
+            <footer id="page-footer" class="page-footer full-border-box">
                 <?php include('pages/components/body_footer.php'); ?>
             </footer>
             <!-- End Page Footer section -->

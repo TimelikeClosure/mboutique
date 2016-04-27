@@ -1,5 +1,5 @@
+/*  Start Document defaults  */
 
-/*  Base body layout styling  */
 body {
     margin: 0;
     font-size: 0;
@@ -18,7 +18,10 @@ body * {
     width: 100%;
 }
 
-/*  Page header styling  */
+/*  End Document defaults  */
+
+/*  Start Page Header section  */
+
 .page-header-bar {
     display: flex;
     flex-direction: column;
@@ -53,7 +56,33 @@ body * {
 .jumbotron {width: 100%;}
 .jumbotron img {max-width: 100%;}
 
-/*  Page main styling  */
+@media screen and (min-width: 768px) {
+    .page-header-bar {
+        max-height: 72px;
+        height: 72px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .header-logo {
+        width: 156px;
+        max-width: 156px;
+        margin-top: 0;
+    }
+    .page-header-bar nav ul {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .page-header-bar nav a {
+        font-size: 16px;
+    }
+    .header-logo img {
+        max-width: 156px;
+    }
+}
+
+/*  End Page Header section  */
+
+/*  Begin Page Main section  */
 main {width: 100%;}
 main * {color: #6a6969;}
 main *::-webkit-input-placeholder {color: #6a6969;}
@@ -249,8 +278,9 @@ main input,main textarea,main button {
 .almond {background-color: #c39005;}
 .coconut *,.vanilla *,.lemon *,.almond * {color: white;}
 
+/*  End Page Main section  */
 
-/*  Page Footer styling  */
+/*  Begin Page Footer section  */
 #page-footer {
     height: 15vw;
     background-color: #df5277;
@@ -321,31 +351,10 @@ main input,main textarea,main button {
     text-align: center;
 }
 
+/*  End Page Footer section  */
+
 /*  Media queries for screen width >= 668px  */
 @media screen and (min-width: 668px) {
-
-    /*  Page header styling  */
-    #page-header {
-        height: 47.2vw;
-        max-height: 472px;
-    }
-    .page-header-bar {
-        max-height: 72px;
-        height: 7.2vw;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .header-logo {
-        width: 15.6vw;
-        max-width: 156px;
-        margin-top: 0;
-    }
-    .page-header-bar nav ul {
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-    .page-header-bar nav a {font-size: 1.6vw;}
-    .header-logo img {max-width: 156px;}
 
     /*  Page main styling  */
     main *::-webkit-input-placeholder {color: #6a6969;}
@@ -554,9 +563,6 @@ main input,main textarea,main button {
 }
 /*  Media queries for screen width > 1000px  */
 @media all and (min-width: 1000px) {
-    /*  Page header styling  */
-    .page-header-bar nav a {font-size: 16px;}
-
     /*  Page main styling  */
     main h1 {
         font-size: 20px;
