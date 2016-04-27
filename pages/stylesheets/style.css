@@ -30,10 +30,7 @@ body * {
     background-color: #fffabe;
 }
 .header-logo {
-    #width: 38.933vw;
     width: 146px;
-    #flex-grow: 0;
-    #margin-top: 2.667vw;
     margin-top: 10px;
 }
 .header-logo img {width: 100%;}
@@ -45,18 +42,18 @@ body * {
 }
 .page-header-bar nav li {
     display: inline-block;
-    margin-left: 1.5vw;
-    margin-right: 1.5vw;
+    margin-left: 1.49vw;
+    margin-right: 1.49vw;
 }
 .page-header-bar nav a {
-    font-size: 2.6vw;
+    font-size: 10px;
     color: #515151;
     text-transform: uppercase;
     text-decoration: none;
 }
 .page-header-bar nav a:hover {color: #d42551;}
 .jumbotron {width: 100%;}
-.jumbotron img {max-width: 100%;}
+.jumbotron img {width: 100%;}
 
 @media screen and (min-width: 768px) {
     .page-header-bar {
@@ -69,8 +66,7 @@ body * {
         margin-top: 0;
     }
     .page-header-bar nav ul {
-        margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 0;
     }
     .page-header-bar nav a {
         font-size: 16px;
