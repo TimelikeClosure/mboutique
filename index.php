@@ -10,7 +10,11 @@
 
 <html>
 
-    <?php require_once('pages/components/html_head.php') ?>
+    <!-- Begin html head -->
+    <head>
+        <?php require_once('pages/components/html_head.php') ?>
+    </head>
+    <!-- End html head -->
 
     <!-- Begin html body -->
     <body>
