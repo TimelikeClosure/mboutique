@@ -30,9 +30,11 @@ body * {
     background-color: #fffabe;
 }
 .header-logo {
-    width: 38.933vw;
-    flex-grow: 0;
-    margin-top: 2.667vw;
+    #width: 38.933vw;
+    width: 146px;
+    #flex-grow: 0;
+    #margin-top: 2.667vw;
+    margin-top: 10px;
 }
 .header-logo img {width: 100%;}
 .page-header-bar nav ul {
@@ -58,14 +60,12 @@ body * {
 
 @media screen and (min-width: 768px) {
     .page-header-bar {
-        max-height: 72px;
         height: 72px;
         flex-direction: row;
         justify-content: space-around;
     }
     .header-logo {
         width: 156px;
-        max-width: 156px;
         margin-top: 0;
     }
     .page-header-bar nav ul {
@@ -74,9 +74,6 @@ body * {
     }
     .page-header-bar nav a {
         font-size: 16px;
-    }
-    .header-logo img {
-        max-width: 156px;
     }
 }
 
