@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <title><?=$pageData['links'][$pageData['page']]['title']?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel='icon' type='image/ico' href='/favicon.ico' />
+    <link rel='icon' type='image/png' href='/favicon.png' />
     <link href="pages/stylesheets/style.css" rel="stylesheet" type="text/css" />
     <?php
         if (!empty($pageData['holiday']['stylesheet'])) { // Load special holiday stylesheet if it exists
