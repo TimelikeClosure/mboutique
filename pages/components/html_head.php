@@ -28,7 +28,7 @@
          * @param {boolean} addHistory - determines whether a new browser history page is created.
          */
         function pageLoad(page, addHistory) {
-            var content = $('#content');
+            var content = $('#page-main');
             oldContent = content.html();
             content.html("<h1>Loading page...</h1>");
 
@@ -48,7 +48,7 @@
                     if (response.hasOwnProperty("responseText") && pageData.links.hasOwnProperty(page)) {
                         updateContent(page, response.responseText, addHistory);
                     } else {
-                        $('#content').html(oldContent);
+                        $('#page-main').html(oldContent);
                     }
                 }
             });
@@ -69,7 +69,7 @@
                 }
             }
             document.title = pageData.links[page].title;
-            $('#content').html(content);
+            $('#page-main').html(content);
             updateImages(page);
         }
 

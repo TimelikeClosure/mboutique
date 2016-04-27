@@ -5,7 +5,7 @@
         exit();
     }
 ?><!--  Begin page main  -->
-<main id="page-main" class="bkgrd-image bkgrd-our-macarons">
+<div class="bkgrd-image bkgrd-our-macarons">
     <!--  Begin one column article  -->
     <div class="flex-container">
         <article class="flex-item-1 flex-item-baseline">
@@ -34,5 +34,5 @@
         </article>
     </div>
     <!--  Close one column article  -->
-</main>
+</div>
 <!--  Close page main  -->

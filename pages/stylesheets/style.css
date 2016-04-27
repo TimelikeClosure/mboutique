@@ -13,7 +13,7 @@ body * {
     width: 100vw;
     margin: 0 auto;
 }
-#page-header,#page-main,#page-footer {
+.full-border-box {
     box-sizing: border-box;
     width: 100%;
 }
@@ -323,11 +323,6 @@ main input,main textarea,main button {
 
 /*  Media queries for screen width >= 668px  */
 @media screen and (min-width: 668px) {
-    /*  Base body layout styling  */
-    #page-header #page-main #page-footer {
-        box-sizing: border-box;
-        width: 100%;
-    }
 
     /*  Page header styling  */
     #page-header {

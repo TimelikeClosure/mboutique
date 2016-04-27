@@ -12,27 +12,27 @@
 
     <?php require_once('pages/components/html_head.php') ?>
 
+    <!-- Begin html body -->
     <body>
         <div class="container">
-            <!--  Begin page header  -->
-            <header id="page-header">
+            <!-- Begin Page Header section -->
+            <header id="page-header" class="full-border-box">
                 <?php include('pages/components/body_header.php'); ?>
             </header>
-            <!--  Close page header  -->
+            <!-- End Page Header section -->
 
-            <!--  Begin page content  -->
-            <div id="content">
+            <!-- Begin Page Main section -->
+            <main id="page-main" class="full-border-box">
                 <?php include("pages/{$pageData['page']}.php"); ?>
-            </div>
-            <!--  Close page content  -->
+            </main>
+            <!-- End Page Main section -->
 
-            <!--  Begin page footer  -->
-            <footer id="page-footer">
+            <!-- Begin Page Footer section -->
+            <footer id="page-footer" class="full-border-box">
                 <?php include('pages/components/body_footer.php'); ?>
             </footer>
-            <!--  Close page footer  -->
-
+            <!-- End Page Footer section -->
         </div>
     </body>
-
+    <!-- End html body -->
 </html>

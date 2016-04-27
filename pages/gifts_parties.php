@@ -5,7 +5,7 @@
         exit();
     }
 ?><!--  Begin page main  -->
-<main id="page-main" class="bkgrd-image bkgrd-gifts-parties">
+<div class="bkgrd-image bkgrd-gifts-parties">
     <div class="flex-container">
         <!--  Begin one column article  -->
         <article class="flex-item-1 flex-item-baseline">
@@ -30,5 +30,5 @@
         </article>
         <!--  Close one column article  -->
     </div>
-</main>
+</div>
 <!--  Close page main  -->
