@@ -274,111 +274,72 @@ main input,main textarea,main button {
 /*  End Page Main section  */
 
 /*  Begin Page Footer section  */
-#page-footer {
-    height: 15vw;
+.page-footer {
+    height: 56px;
+    padding: 4px;
     background-color: #df5277;
 }
-#page-footer * {
+.page-footer div {
     color: white;
-    font-size: 2.6vw;
+    font-size: 10px;
 }
 .contact {
-    position: relative;
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
 }
 .contact>div {
-    flex-basis: 34%;
-    margin: 1vw 0 0 0;
+    margin: 4px 0;
     display: flex;
     justify-content: center;
 }
-.contact-mail {
-    background-image: url("../../assets/images/mail.png");
+.contact-method {
     background-repeat: no-repeat;
     background-size: contain;
-    text-indent: 6vw;
+    padding: 0 26px;
+}
+.contact-method>div {
+    padding: 0 13px;
+}
+.contact-mail {
+    background-image: url("../../assets/images/mail.png");
 }
 .contact-phone {
     background-image: url("../../assets/images/phone.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    text-indent: 6vw;
-}
-.contact-social-media {
-    position: relative;
-    left: -4vw;
 }
 .contact-facebook {
-    position: relative;
-    left: 2vw;
-    top: 0.5vw;
-    height: 3vw;
+    background-image: url("../../assets/images/facebook.png");
 }
 .contact-twitter {
-    position: relative;
-    left: 5vw;
-    top: 0.5vw;
-    height: 3vw;
-}
-.contact-social-media {
-    position: relative;
-    left: -4vw;
-}
-.contact-facebook {
-    position: relative;
-    left: 2vw;
-}
-.contact-twitter {
-    position: relative;
-    left: 4vw;
+    background-image: url("../../assets/images/twitter.png");
 }
 .copyright {
-    position: relative;
-    top: 2vw;
     width: 100%;
     text-align: center;
 }
-@media (min-width: 668px) {
-    #page-footer {
-        height: 8vw;
-        max-height: 80px;
+@media (min-width: 768px) {
+    .page-footer {
+        height: 80px;
     }
-    #page-footer * {font-size: 1.2vw;}
+    .page-footer div {font-size: 12px;}
     .contact {justify-content: space-around;}
     .contact>div {
         flex-basis: 33%;
-        margin: 1vw 0 0 0;
+        margin: 10px 0 0 0;
     }
-    .contact-mail {text-indent: 2.7vw;}
-    .contact-phone {text-indent: 2.7vw;}
-    .contact-facebook {
-        top: 0;
-        height: 1.6vw;
-    }
-    .contact-twitter {
-        left: 4vw;
-        top: 0;
-        height: 1.6vw;
-    }
-    .copyright {top: 1.5vw;}
-}
-@media (min-width: 1000px) {
-    #page-footer * {font-size: 12px;}
-    .contact>div {margin-top: 10px;}
-    .contact-mail {text-indent: 27px;}
-    .contact-phone {text-indent: 27px;}
+    .contact-mail,.contact-phone {text-indent: 27px;}
     .contact-social-media {left: -40px;}
     .contact-facebook {
+        top: 0;
         left: 20px;
         height: 16px;
     }
     .contact-twitter {
         left: 40px;
+        top: 0;
         height: 16px;
     }
     .copyright {top: 15px;}

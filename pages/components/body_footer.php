@@ -7,18 +7,12 @@
 ?>
 <!--  Begin contacts  -->
 <div class="contact">
-    <div>
-        <div class="contact-mail">order@mboutique.com</div>
-    </div>
-    <div>
-        <div class="contact-phone">949.800.3111</div>
-    </div>
-    <div>
-        <div class="contact-social-media">
-            Follow us
-            <img class="contact-facebook" src="assets/images/facebook.png" />
-            <img class="contact-twitter" src="assets/images/twitter.png" />
-        </div>
+    <div class="contact-method contact-mail">order@mboutique.com</div>
+    <div class="contact-method contact-phone">949.800.3111</div>
+    <div class="contact-method contact-social-media">
+        <div>Follow us</div>
+        <div class="contact-method contact-facebook"></div>
+        <div class="contact-method contact-twitter"></div>
     </div>
 </div>
 <!--  Close contacts  -->
