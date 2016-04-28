@@ -343,6 +343,46 @@ main input,main textarea,main button {
     width: 100%;
     text-align: center;
 }
+@media (min-width: 668px) {
+    #page-footer {
+        height: 8vw;
+        max-height: 80px;
+    }
+    #page-footer * {font-size: 1.2vw;}
+    .contact {justify-content: space-around;}
+    .contact>div {
+        flex-basis: 33%;
+        margin: 1vw 0 0 0;
+    }
+    .contact-mail {text-indent: 2.7vw;}
+    .contact-phone {text-indent: 2.7vw;}
+    .contact-facebook {
+        top: 0;
+        height: 1.6vw;
+    }
+    .contact-twitter {
+        left: 4vw;
+        top: 0;
+        height: 1.6vw;
+    }
+    .copyright {top: 1.5vw;}
+}
+@media (min-width: 1000px) {
+    #page-footer * {font-size: 12px;}
+    .contact>div {margin-top: 10px;}
+    .contact-mail {text-indent: 27px;}
+    .contact-phone {text-indent: 27px;}
+    .contact-social-media {left: -40px;}
+    .contact-facebook {
+        left: 20px;
+        height: 16px;
+    }
+    .contact-twitter {
+        left: 40px;
+        height: 16px;
+    }
+    .copyright {top: 15px;}
+}
 
 /*  End Page Footer section  */
 
@@ -529,30 +569,6 @@ main input,main textarea,main button {
     .almond {background-color: #c39005;}
     .coconut *,.vanilla *,.lemon *,.almond * {color: white;}
 
-
-    /*  Page Footer styling  */
-    #page-footer {
-        height: 8vw;
-        max-height: 80px;
-    }
-    #page-footer * {font-size: 1.2vw;}
-    .contact {justify-content: space-around;}
-    .contact>div {
-        flex-basis: 33%;
-        margin: 1vw 0 0 0;
-    }
-    .contact-mail {text-indent: 2.7vw;}
-    .contact-phone {text-indent: 2.7vw;}
-    .contact-facebook {
-        top: 0;
-        height: 1.6vw;
-    }
-    .contact-twitter {
-        left: 4vw;
-        top: 0;
-        height: 1.6vw;
-    }
-    .copyright {top: 1.5vw;}
 }
 /*  Media queries for screen width > 1000px  */
 @media all and (min-width: 1000px) {
@@ -595,20 +611,4 @@ main input,main textarea,main button {
     .schedule-time * {font-size: 12px;}
     .schedule-flavor * {font-size: 12px;}
     .schedule-flavor img {right: 4px;}
-
-    /*  Page footer styling  */
-    #page-footer * {font-size: 12px;}
-    .contact>div {margin-top: 10px;}
-    .contact-mail {text-indent: 27px;}
-    .contact-phone {text-indent: 27px;}
-    .contact-social-media {left: -40px;}
-    .contact-facebook {
-        left: 20px;
-        height: 16px;
-    }
-    .contact-twitter {
-        left: 40px;
-        height: 16px;
-    }
-    .copyright {top: 15px;}
 }
