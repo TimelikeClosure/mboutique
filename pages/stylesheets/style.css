@@ -275,7 +275,6 @@ main input,main textarea,main button {
 
 /*  Begin Page Footer section  */
 .page-footer {
-    height: 56px;
     padding: 4px;
     background-color: #df5277;
 }
@@ -310,6 +309,9 @@ main input,main textarea,main button {
 .contact-phone {
     background-image: url("../../assets/images/phone.png");
 }
+.contact-social-media {
+    width: 100%;
+}
 .contact-facebook {
     background-image: url("../../assets/images/facebook.png");
 }
@@ -318,31 +320,15 @@ main input,main textarea,main button {
 }
 .copyright {
     width: 100%;
+    margin: 4px 0;
     text-align: center;
 }
 @media (min-width: 768px) {
-    .page-footer {
-        height: 80px;
-    }
+    .page-footer {height: 80px;}
     .page-footer div {font-size: 12px;}
     .contact {justify-content: space-around;}
-    .contact>div {
-        flex-basis: 33%;
-        margin: 10px 0 0 0;
-    }
-    .contact-mail,.contact-phone {text-indent: 27px;}
-    .contact-social-media {left: -40px;}
-    .contact-facebook {
-        top: 0;
-        left: 20px;
-        height: 16px;
-    }
-    .contact-twitter {
-        left: 40px;
-        top: 0;
-        height: 16px;
-    }
-    .copyright {top: 15px;}
+    .contact>div {margin: 10px 0;}
+    .contact-social-media {width: auto;}
 }
 
 /*  End Page Footer section  */
