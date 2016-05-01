@@ -116,17 +116,60 @@ main input,main textarea,main button {
     border: none;
     background-color: #f5f5f5;
 }
-/*
-!*  Background image styling  *!
-.bkgrd-image {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% auto;
-    width: 100vw;
-    max-width: 1000px;
+@media screen and (min-width: 668px) {
+    main *::-webkit-input-placeholder {color: #6a6969;}
+    main *:-moz-placeholder {color: #6a6969;}
+    main *::-moz-placeholder {color: #6a6969;}
+    main *:-ms-input-placeholder {color: #6a6969;}
+    main h1 {
+        font-size: 2vw;
+        margin: 2vw 0;
+        text-align: left;
+    }
+    main p, main a, main input, main textarea, main button {
+        font-size: 1.4vw;
+        margin: 1.5vw 0;
+    }
+    main p {line-height: 150%;}
+    main ul {
+        display: block;
+        position: static;
+        transform: translateX(0);
+        margin-bottom: 50px;
+        padding-left: 4vw;
+    }
+    main li {font-size: 1.4vw;}
+    main a {line-height: 150%;}
+    hr {display: none;}
 }
-.bkgrd-our-macarons {background-image: url("assets/images/our-macarons-background.png");}
-.bkgrd-gifts-parties {background-image: url("assets/images/gifts-parties-background.png");}*/
+@media all and (min-width: 1000px) {
+    main h1 {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    main p, main a, main input, main textarea, main button {
+        font-size: 14px;
+        margin: 15px 0;
+    }
+    main ul {
+        margin-bottom: 50px;
+        padding-left: 40px;
+    }
+    main li {font-size: 14px;}
+}
+
+/*  Background image styling  */
+@media screen and (min-width: 668px) {
+    .bkgrd-image {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% auto;
+        width: 100vw;
+        max-width: 1000px;
+    }
+    .bkgrd-our-macarons {background-image: url("../../assets/images/our-macarons-background.png");}
+    .bkgrd-gifts-parties {background-image: url("../../assets/images/gifts-parties-background.png");}
+}
 
 /*  Flexbox column layout styling  */
 .flex-container {
@@ -156,7 +199,38 @@ main input,main textarea,main button {
     text-align: center;
     padding: 0;
 }
-
+@media screen and (min-width: 668px) {
+    .flex-container {
+        flex-direction: row;
+        padding: 5.5vw 1.5vw 2vw 1.5vw;
+    }
+    .flex-container>* {padding: 2vw 2.2vw;}
+    .flex-item-1 {flex: 1;}
+    .flex-item-2 {flex: 2;}
+    .flex-item-3 {flex: 3;}
+    .flex-mobile-hidden {display: block;}
+    .flex-container img {
+        width: 187px;
+        max-width: 18.7vw;
+    }
+    .flex-container input,.flex-container textarea,.flex-container button {margin: 1.5vw 0;}
+    .two-col input,.two-col textarea {width: 100%;}
+    .flex-container input,.flex-container button {
+        height: 3.5vw;
+        max-height: 35px;
+    }
+    .flex-container textarea {
+        height: 7vw;
+        max-height: 70px;
+    }
+}
+@media all and (min-width: 1000px) {
+    .flex-container {padding: 55px 15px 20px 15px;}
+    .flex-container > * {padding: 20px 24px;}
+    .flex-container input, .flex-container textarea, .flex-container button {
+        margin: 15px 0;
+    }
+}
 
 /*  Column layouts styling  */
 /*  This section to be depreciated in favor of Flexbox column layout styling once all pages have been moved over  */
@@ -216,6 +290,67 @@ main input,main textarea,main button {
     padding: 4%;
     margin: 1.5vw 0;
 }
+@media screen and (min-width: 668px) {
+    .one-col {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 5vw 5vw 7vw 5vw;
+    }
+    .one-col h1 {margin: 2vw 0;}
+    .one-col ul {margin-bottom: 50px;}
+    .two-col-container {
+        display: flex;
+        justify-content: center;
+    }
+    .two-col {
+        box-sizing: border-box;
+        height: 100%;
+    }
+    .two-col input,.two-col textarea,.two-col button {margin: 0.8vw 0;}
+    .two-col input,.two-col textarea {width: 100%;}
+    .two-col input,.two-col button {
+        height: 3.5vw;
+        max-height: 35px;
+    }
+    .two-col textarea {
+        display: block;
+        resize: none;
+        height: 7vw;
+        max-height: 70px;
+    }
+    .two-col button {
+        display: block;
+        position: relative;
+        left: 100%;
+        transform: translateX(-100%);
+        width: 50%;
+        text-align: center;
+    }
+    .col-left-25 {
+        width: 25vw;
+        max-width: 250px;
+    }
+    .col-left-25 img {
+        margin: 11.5vw 3.15vw;
+        max-width: 18.7vw;
+    }
+    .col-left-51 {
+        width: 51vw;
+        max-width: 510px;
+    }
+    .col-right-75 {
+        width: 75%;
+        padding: 4%;
+        margin: 1.5vw 0;
+    }
+}
+@media all and (min-width: 1000px) {
+    .one-col {padding: 50px 50px 70px 50px;}
+    .col-left-25 img {
+        margin: 115px 31.5px;
+        max-width: 187px;
+    }
+}
 
 /*  Schedule styling  */
 .schedule {
@@ -270,6 +405,77 @@ main input,main textarea,main button {
 .lemon {background-color: #a2304e;}
 .almond {background-color: #c39005;}
 .coconut *,.vanilla *,.lemon *,.almond * {color: white;}
+
+@media screen and (min-width: 668px) {
+    .schedule {
+        width: 100%;
+        padding: 0.7375vw;
+        margin-bottom: 5vw;
+    }
+    .schedule>div {
+        box-sizing: border-box;
+        display: inline-block;
+        margin: 0.7375vw;
+        background-color: #fffabe;
+        height: 14vw;
+        max-height: 140px;
+        width: 12.6vw;
+        max-width: 126px;
+    }
+    .schedule div div {
+        position: relative;
+        box-sizing: border-box;
+        padding: 0.4vw;
+    }
+    .schedule-day {
+        height: 3.7vw;
+        max-height: 37px;
+    }
+    .schedule-day * {
+        margin: 0;
+        line-height: 3.7vw;
+    }
+    .schedule-time {
+        height: 3.7vw;
+        max-height: 37px;
+    }
+    .schedule-time * {
+        font-size: 1.2vw;
+        margin: 0;
+    }
+    .schedule-flavor {
+        height: 3.3vw;
+        max-height: 33px;
+    }
+    .schedule-flavor * {
+        font-size: 1.2vw;
+        margin: 0;
+    }
+    .schedule-flavor img {
+        position: absolute;
+        right: 0.4vw;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .coconut {background-color: #824603;}
+    .vanilla {background-color: #df5277;}
+    .lemon {background-color: #a2304e;}
+    .almond {background-color: #c39005;}
+    .coconut *,.vanilla *,.lemon *,.almond * {color: white;}
+}
+@media all and (min-width: 1000px) {
+    /*  Schedule styling  */
+    .schedule {
+        padding: 7.375px;
+        margin-bottom: 50px;
+    }
+    .schedule>div {margin: 7.375px;}
+    .schedule div div {padding: 4px;}
+    .schedule-day * {line-height: 37px;}
+    .schedule-time * {font-size: 12px;}
+    .schedule-flavor * {font-size: 12px;}
+    .schedule-flavor img {right: 4px;}
+}
 
 /*  End Page Main section  */
 
@@ -332,230 +538,3 @@ main input,main textarea,main button {
 }
 
 /*  End Page Footer section  */
-
-/*  Media queries for screen width >= 668px  */
-@media screen and (min-width: 668px) {
-
-    /*  Page main styling  */
-    main *::-webkit-input-placeholder {color: #6a6969;}
-    main *:-moz-placeholder {color: #6a6969;}
-    main *::-moz-placeholder {color: #6a6969;}
-    main *:-ms-input-placeholder {color: #6a6969;}
-    main h1 {
-        font-size: 2vw;
-        margin: 2vw 0;
-        text-align: left;
-    }
-    main p,main a,main input,main textarea,main button {
-        font-size: 1.4vw;
-        margin: 1.5vw 0;
-    }
-    main p {line-height: 150%;}
-    main ul {
-        display: block;
-        position: static;
-        transform: translateX(0);
-        margin-bottom: 50px;
-        padding-left: 4vw;
-    }
-    main li {font-size: 1.4vw;}
-    main a {
-        line-height: 150%;
-    }
-    hr {display: none;}
-
-    /*  Background image styling  */
-    .bkgrd-image {
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: 100% auto;
-        width: 100vw;
-        max-width: 1000px;
-    }
-    .bkgrd-our-macarons {background-image: url("../../assets/images/our-macarons-background.png");}
-    .bkgrd-gifts-parties {background-image: url("../../assets/images/gifts-parties-background.png");}
-
-    /*  Flexbox column layout styling  */
-    .flex-container {
-        flex-direction: row;
-        padding: 5.5vw 1.5vw 2vw 1.5vw;
-    }
-    .flex-container>* {padding: 2vw 2.2vw;}
-    .flex-item-1 {flex: 1;}
-    .flex-item-2 {flex: 2;}
-    .flex-item-3 {flex: 3;}
-    .flex-mobile-hidden {display: block;}
-    .flex-container img {
-        width: 187px;
-        max-width: 18.7vw;
-    }
-    .flex-container input,.flex-container textarea,.flex-container button {margin: 1.5vw 0;}
-    .two-col input,.two-col textarea {width: 100%;}
-    .flex-container input,.flex-container button {
-        height: 3.5vw;
-        max-height: 35px;
-    }
-    .flex-container textarea {
-        height: 7vw;
-        max-height: 70px;
-    }
-
-    /*  Column layouts styling  */
-    /*  This section to be depreciated in favor of Flexbox column layout styling once all pages have been moved over  */
-    .one-col {
-        box-sizing: border-box;
-        width: 100%;
-        padding: 5vw 5vw 7vw 5vw;
-    }
-    .one-col h1 {margin: 2vw 0;}
-    .one-col ul {margin-bottom: 50px;}
-    .two-col-container {
-        display: flex;
-        justify-content: center;
-    }
-    .two-col {
-        box-sizing: border-box;
-        height: 100%;
-    }
-    .two-col input,.two-col textarea,.two-col button {
-        margin: 0.8vw 0;
-    }
-    .two-col input,.two-col textarea {
-        width: 100%;
-    }
-    .two-col input,.two-col button {
-        height: 3.5vw;
-        max-height: 35px;
-    }
-    .two-col textarea {
-        display: block;
-        resize: none;
-        height: 7vw;
-        max-height: 70px;
-    }
-    .two-col button {
-        display: block;
-        position: relative;
-        left: 100%;
-        transform: translateX(-100%);
-        width: 50%;
-        text-align: center;
-    }
-    .col-left-25 {
-        width: 25vw;
-        max-width: 250px;
-    }
-    .col-left-25 img {
-        margin: 11.5vw 3.15vw;
-        max-width: 18.7vw;
-    }
-    .col-left-51 {
-        width: 51vw;
-        max-width: 510px;
-    }
-    .col-right-75 {
-        width: 75%;
-        padding: 4%;
-        margin: 1.5vw 0;
-    }
-
-    /*  Schedule styling  */
-    .schedule {
-        width: 100%;
-        padding: 0.7375vw;
-        margin-bottom: 5vw;
-    }
-    .schedule>div {
-        box-sizing: border-box;
-        display: inline-block;
-        margin: 0.7375vw;
-        background-color: #fffabe;
-        height: 14vw;
-        max-height: 140px;
-        width: 12.6vw;
-        max-width: 126px;
-    }
-    .schedule div div {
-        position: relative;
-        box-sizing: border-box;
-        padding: 0.4vw;
-    }
-    .schedule-day {
-        height: 3.7vw;
-        max-height: 37px;
-    }
-    .schedule-day * {
-        margin: 0;
-        line-height: 3.7vw;
-    }
-    .schedule-time {
-        height: 3.7vw;
-        max-height: 37px;
-    }
-    .schedule-time * {
-        font-size: 1.2vw;
-        margin: 0;
-    }
-    .schedule-flavor {
-        height: 3.3vw;
-        max-height: 33px;
-    }
-    .schedule-flavor * {
-        font-size: 1.2vw;
-        margin: 0;
-    }
-    .schedule-flavor img {
-        position: absolute;
-        right: 0.4vw;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    .coconut {background-color: #824603;}
-    .vanilla {background-color: #df5277;}
-    .lemon {background-color: #a2304e;}
-    .almond {background-color: #c39005;}
-    .coconut *,.vanilla *,.lemon *,.almond * {color: white;}
-
-}
-/*  Media queries for screen width > 1000px  */
-@media all and (min-width: 1000px) {
-    /*  Page main styling  */
-    main h1 {
-        font-size: 20px;
-        margin: 20px 0;
-    }
-    main p,main a,main input,main textarea,main button {
-        font-size: 14px;
-        margin: 15px 0;
-    }
-    main ul {
-        margin-bottom: 50px;
-        padding-left: 40px;
-    }
-    main li {font-size: 14px;}
-
-    /*  Flexbox column layout styling  */
-    .flex-container {padding: 55px 15px 20px 15px;}
-    .flex-container>* {padding: 20px 24px;}
-    .flex-container input,.flex-container textarea,.flex-container button {margin: 15px 0;}
-
-    /*  Column layouts styling  */
-    /*  This section to be depreciated in favor of Flexbox column layout styling once all pages have been moved over  */
-    .one-col {padding: 50px 50px 70px 50px;}
-    .col-left-25 img {
-        margin: 115px 31.5px;
-        max-width: 187px;
-    }
-
-    /*  Schedule styling  */
-    .schedule {
-        padding: 7.375px;
-        margin-bottom: 50px;
-    }
-    .schedule>div {margin: 7.375px;}
-    .schedule div div {padding: 4px;}
-    .schedule-day * {line-height: 37px;}
-    .schedule-time * {font-size: 12px;}
-    .schedule-flavor * {font-size: 12px;}
-    .schedule-flavor img {right: 4px;}
-}
