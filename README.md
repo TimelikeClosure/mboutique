@@ -20,6 +20,7 @@ Link to [latest stable version](http://staging.mboutique.timhoristjr.com).
 
   * Clean up CSS and remove old inflexible styling code.
   * Finish adding mobile responsiveness.
+  * Replace jQuery dependancy with vanilla JavaScript.
   * Add more holiday themes.
   * Add support for multiple languages.
 
