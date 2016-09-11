@@ -89,7 +89,7 @@
         }
     }
 
-    $(document).ready(function(){
+    document.addEventListener('DOMContentLoaded', function(){
         /**
          * window.onpopstate - Updates page content when browser navigation buttons are used.
          * @param event
