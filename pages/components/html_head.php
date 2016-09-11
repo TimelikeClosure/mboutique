@@ -78,13 +78,14 @@
      * @param {string} page - determines which page images to use.
      */
     function updateImages(page) {
-        for (var image in pageData.links[page].images) {
-            var imageElement = $('#' + image + ' img');
-            if (pageData.links[page].images[image].hasOwnProperty('src')) {
-                imageElement.attr('src', pageData.links[page].images[image].src);
+        for (var imageIndex in pageData.links[page].images) {
+            var image = pageData.links[page].images[imageIndex];
+            var imageElement = $('#' + imageIndex + ' img');
+            if (image.hasOwnProperty('src')) {
+                imageElement.attr('src', image.src);
             }
-            if (pageData.links[page].images[image].hasOwnProperty('alt')) {
-                imageElement.attr('alt', pageData.links[page].images[image].alt);
+            if (image.hasOwnProperty('alt')) {
+                imageElement.attr('alt', image.alt);
             }
         }
     }
