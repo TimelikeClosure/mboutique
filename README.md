@@ -6,8 +6,6 @@ This project was originally made to practice matching desktop and mobile design 
 
 Link to [live version](http://mboutique.timhoristjr.com).
 
-Link to [latest stable version](http://staging.mboutique.timhoristjr.com).
-
 ## Feature List
 
   * Partial mobile responsiveness.
